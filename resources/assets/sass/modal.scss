@@ -1,0 +1,287 @@
+.ModalButtonGroup--vertical {
+	margin-top: 40px;
+	margin-bottom: 16px
+}
+
+.ModalButtonGroup--vertical .Button {
+	display: block;
+	width: 220px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+.ModalButtonGroup--vertical .Button+.Button {
+	margin-top: 28px
+}
+
+.Modal-content--buttonGroupOnly .ModalButtonGroup--vertical {
+	margin-top: 60px
+}
+
+.ModalButtonGroup--horizontal {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	margin-top: 48px
+}
+
+.ModalButtonGroup--horizontal .Button {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.ModalButtonGroup--horizontal .Button:last-child:first-child {
+	width: 220px;
+	margin-right: auto;
+	margin-left: auto;
+	-webkit-box-flex: initial;
+	-ms-flex: initial;
+	flex: initial
+}
+
+.ModalButtonGroup--horizontal .Button+.Button {
+	margin-left: 16px
+}
+
+.Modal-wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 203;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transition: opacity .3s ease-out
+}
+
+.Modal-wrapper.Modal-enter {
+	opacity: .01
+}
+
+.Modal-wrapper.Modal-enter-active,.Modal-wrapper.Modal-leave {
+	opacity: 1
+}
+
+.Modal-wrapper.Modal-leave-active {
+	opacity: .01
+}
+
+.Modal-backdrop {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	background-color: rgba(26,26,26,.65);
+	transition: background-color .3s ease-out
+}
+
+.Modal-wrapper--transparent .Modal-backdrop {
+	background-color: transparent
+}
+
+html[data-theme=dark] .Modal-backdrop {
+	background-color: rgba(0,0,0,.65)
+}
+
+.Modal {
+	position: relative;
+	z-index: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 400px;
+	max-height: calc(100vh - 24px * 2);
+	margin-right: auto;
+	margin-left: auto;
+	outline: 0;
+	box-shadow: 0 5px 20px rgba(26,26,26,.1);
+	box-sizing: border-box;
+	transition: max-height .8s ease
+}
+
+html[data-theme=dark] .Modal {
+	box-shadow: 0 1px 3px rgba(0,0,0,.3)
+}
+
+.Modal--large {
+	width: 536px
+}
+
+.Modal--fullPage {
+	width: 688px;
+	height: calc(100vh - 24px * 2)
+}
+
+.Modal-enter .Modal {
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px)
+}
+
+.Modal-enter-active .Modal {
+	transition: opacity .3s ease-out,-webkit-transform .3s ease-out;
+	transition: transform .3s ease-out,opacity .3s ease-out;
+	transition: transform .3s ease-out,opacity .3s ease-out,-webkit-transform .3s ease-out
+}
+
+.Modal-enter-active .Modal,.Modal-leave .Modal {
+	-webkit-transform: translateY(0);
+	transform: translateY(0)
+}
+
+.Modal-leave-active .Modal {
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
+	transition: opacity .3s ease-out,-webkit-transform .3s ease-out;
+	transition: transform .3s ease-out,opacity .3s ease-out;
+	transition: transform .3s ease-out,opacity .3s ease-out,-webkit-transform .3s ease-out
+}
+
+.Modal-inner {
+	overflow: auto;
+	background: #fff;
+	border-radius: 2px
+}
+
+.Modal--fullPage .Modal-inner {
+	height: 100%
+}
+
+html[data-theme=dark] .Modal-inner {
+	background: #1a1a1a
+}
+
+.Modal-closeButton {
+	position: absolute;
+	top: 8px;
+	right: -60px;
+	padding: 12px
+}
+
+.Modal-closeIcon {
+	vertical-align: top;
+	fill: #fff
+}
+
+html[data-theme=dark] .Modal-closeIcon {
+	fill: #ebebeb
+}
+
+.Modal-title {
+	margin-top: 40px;
+	font-size: 24px;
+	font-weight: 500;
+	color: #1a1a1a;
+	text-align: center
+}
+
+.Modal-title.Modal-title--simple {
+	font-family: inherit;
+	font-size: 20px
+}
+
+html[data-theme=dark] .Modal-title {
+	color: #999
+}
+
+.Modal-subtitle {
+	padding: 0 38px;
+	margin-top: 4px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #8590a6;
+	text-align: center
+}
+
+.Modal-subtitle a {
+	text-decoration: underline
+}
+
+html[data-theme=dark] .Modal-subtitle {
+	color: #606a80
+}
+
+.Modal-content {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 0 24px 32px;
+	margin-top: 24px;
+	line-height: 1.7;
+	opacity: 1
+}
+
+.Modal--fullPage .Modal-content {
+	padding: 0
+}
+
+.Modal-content.Modal-content--spread {
+	height: 100%;
+	margin-top: 0
+}
+
+.Modal-content.Modal-content--hidden {
+	opacity: 0;
+	transition: opacity .3s ease-out
+}
+
+.Modal-footer {
+	padding: 16px 24px;
+	font-size: 13px;
+	line-height: 1.7;
+	color: #8590a6;
+	background: #f6f6f6;
+	border-top: 1px solid #ebebeb
+}
+
+.Modal-footer a {
+	text-decoration: underline
+}
+
+html[data-theme=dark] .Modal-footer {
+	color: #606a80;
+	background: #2e2e2e;
+	border-top: 1px solid #444
+}
+
+.Modal-header {
+	padding: 15px;
+	text-align: center;
+	&::before, &::after {
+		content: " ";
+	    display: table;
+	}
+	&::after {
+		clear: both;
+	}
+	h3 {
+		margin: 10px 0;
+		font-size: 24px;
+    	margin-bottom: 10px;
+		font-weight: 500;
+	}
+	& + .Modal-content {
+		margin: 0;
+	}
+}

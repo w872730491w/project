@@ -1,0 +1,773 @@
+.Topbar {
+	background: #fff;
+	border-bottom: 1px solid #f6f6f6;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 50px;
+	padding: 0 20px
+}
+
+html[data-theme=dark] .Topbar {
+	background: #1a1a1a;
+	border-bottom: 1px solid #2e2e2e
+}
+
+.Topbar-title {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.Topbar--mobile .Topbar-title {
+	font-weight: 600;
+	font-synthesis: style
+}
+
+html[data-ios] .Topbar--mobile .Topbar-title {
+	font-weight: 500
+}
+
+html[data-android] .Topbar--mobile .Topbar-title {
+	font-weight: 700
+}
+
+.CommentTopbar-title {
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 600;
+	font-synthesis: style;
+	color: #1a1a1a
+}
+
+html[data-ios] .CommentTopbar-title {
+	font-weight: 500
+}
+
+html[data-android] .CommentTopbar-title {
+	font-weight: 700
+}
+
+html[data-theme=dark] .CommentTopbar-title {
+	color: #999
+}
+
+.CommentTopbar-back {
+	font-size: 16px;
+	font-weight: inherit;
+	color: #1a1a1a
+}
+
+.CommentTopbar-back:hover {
+	color: #0084ff
+}
+
+html[data-theme=dark] .CommentTopbar-back:hover {
+	color: #3a76d0
+}
+
+html[data-theme=dark] .CommentTopbar-back {
+	color: #999
+}
+
+.CommentTopbar-backIcon {
+	vertical-align: -2px;
+	fill: currentColor
+}
+
+.CommentTopbar {
+	border-radius: 2px
+}
+
+.CommentTopbar-meta {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	height: 50px;
+	padding: 0 16px
+}
+
+.CommentTopbar-meta,.CommentTopbar-tabsWrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.CommentTopbar-tabsWrapper {
+	font-size: 15px
+}
+
+.CommentTopbar-tabs {
+	padding: 0;
+	border-bottom: none
+}
+
+.CommentTopbar-tab {
+	display: inline-block;
+	padding: 0 20px
+}
+
+.CommentTopbar-tab:first-child {
+	padding-left: 0
+}
+
+.CommentTopbar-tabButton {
+	position: relative;
+	height: 56px;
+	border: none
+}
+
+.CommentTopbar-tabButton:hover {
+	background: none
+}
+
+.Comments,.Comments-container {
+	height: 100%
+}
+
+.Comments {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	overflow: hidden;
+	box-sizing: border-box
+}
+
+.Comments--hidden {
+	display: none
+}
+
+.Comments-titleLink a {
+	color: #175199
+}
+
+.Comments-titleLink a:hover,html[data-theme=dark] .Comments-titleLink a:hover {
+	border-bottom: 1px solid #175199
+}
+
+html[data-theme=dark] .Comments-titleLink a {
+	color: #175199
+}
+
+.CommentList {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	overflow-x: hidden;
+	overflow-y: auto
+}
+
+.CommentList-divider {
+	position: relative;
+	margin: 0 24px;
+	font-size: 14px;
+	color: #8590a6;
+	text-align: center
+}
+
+.CommentList-divider:first-child {
+	margin-top: 16px
+}
+
+.CommentList-divider:last-child {
+	margin-bottom: 16px
+}
+
+.CommentList-divider+.CommentItem:after {
+	content: none
+}
+
+.CommentList-divider a {
+	color: #175199
+}
+
+.CommentList-divider a:hover,html[data-theme=dark] .CommentList-divider a:hover {
+	border-bottom: 1px solid #175199
+}
+
+html[data-theme=dark] .CommentList-divider a {
+	color: #175199
+}
+
+html[data-theme=dark] .CommentList-divider {
+	color: #606a80
+}
+
+.CommentList-dividerLine {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0;
+	margin: auto;
+	border-top: 1px solid #ebebeb
+}
+
+html[data-theme=dark] .CommentList-dividerLine {
+	border-top: 1px solid #444
+}
+
+.CommentList-dividerText {
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	padding: 0 1em;
+	background-color: #fff
+}
+
+.CommentList-dividerText .CommentList-questionMark {
+	margin-left: 8px
+}
+
+html[data-theme=dark] .CommentList-dividerText {
+	background-color: #1a1a1a
+}
+
+.Comments-footer {
+	padding: 12px 20px;
+	background: #fff;
+	border-top: 1px solid #ebebeb
+}
+
+html[data-theme=dark] .Comments-footer {
+	background: #1a1a1a;
+	border-top: 1px solid #444
+}
+
+.Comments-disabledText {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 14px 12px;
+	color: #8590a6;
+	background-color: #f6f6f6;
+	border-top: 1px solid #f6f6f6;
+	box-sizing: border-box;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+
+html[data-theme=dark] .Comments-disabledText {
+	color: #606a80;
+	background-color: #2e2e2e;
+	border-top: 1px solid #2e2e2e
+}
+
+.Comments-disabledText--fixed {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	background: #fff
+}
+
+.Comments-disabledText--fixed .Comments-disabledReason {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background: #f6f6f6;
+	width: 100%;
+	text-align: center;
+	border-radius: 3px
+}
+
+html[data-theme=dark] .Comments-disabledText--fixed .Comments-disabledReason {
+	background: #2e2e2e
+}
+
+html[data-theme=dark] .Comments-disabledText--fixed {
+	background: #1a1a1a
+}
+
+.CommentList-action {
+	position: relative;
+	padding: 16px 0;
+	text-align: center
+}
+
+.CommentList-action:after {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: calc(100% - 48px);
+	border-bottom: 1px solid #f6f6f6;
+	content: ""
+}
+
+html[data-theme=dark] .CommentList-action:after {
+	border-bottom: 1px solid #2e2e2e
+}
+
+.CommentList-action a {
+	color: #175199
+}
+
+.CommentList-action a:hover,html[data-theme=dark] .CommentList-action a:hover {
+	border-bottom: 1px solid #175199
+}
+
+html[data-theme=dark] .CommentList-action a {
+	color: #175199
+}
+
+.Comments-withPagination {
+	border: 1px solid #ebebeb;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1);
+	background: #fff;
+	margin-top: 12px;
+	overflow: visible;
+	border-radius: 4px
+}
+
+html[data-theme=dark] .Comments-withPagination {
+	box-shadow: 0 1px 3px rgba(0,0,0,.3)
+}
+
+.Comments-withPagination .CommentList {
+	overflow-y: visible
+}
+
+html[data-theme=dark] .Comments-withPagination {
+	border: 1px solid #444;
+	background: #1a1a1a
+}
+
+.comments-pagination {
+	border-top: 1px solid #ebebeb
+}
+
+html[data-theme=dark] .comments-pagination {
+	border-top: 1px solid #444
+}
+
+.Comments-Packup-Button {
+	background: hsla(0,0%,92%,.95);
+	border-radius: 3px;
+	position: fixed;
+	height: 30px;
+	width: 93px;
+	bottom: 30px;
+	left: 570px;
+	font-size: 13px;
+	color: #8590a6;
+	letter-spacing: 0;
+	margin-left: -93px
+}
+
+.Comments-Packup-Button:hover,html[data-theme=dark] .Comments-Packup-Button:hover {
+	color: gray
+}
+
+.Comments-Packup-Button .Icon {
+	margin-left: 6px;
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg)
+}
+
+.Comments-Packup-Button-enter,.Comments-Packup-Button-leave {
+	transition: opacity .3s
+}
+
+.Comments-Packup-Button-enter {
+	opacity: 0
+}
+
+.Comments-Packup-Button-enter-active,.Comments-Packup-Button-leave {
+	opacity: 1
+}
+
+.Comments-Packup-Button-leave-active {
+	opacity: 0
+}
+
+html[data-theme=dark] .Comments-Packup-Button {
+	background: rgba(68,68,68,.95);
+	color: #606a80
+}
+
+.Comments-empty {
+	padding: 60px 0;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	box-sizing: border-box;
+	overflow: auto
+}
+
+.CommentList-expendCollapseButton {
+	color: #8590a6;
+	cursor: pointer
+}
+
+.CommentList-expendCollapseButton:hover,html[data-theme=dark] .CommentList-expendCollapseButton:hover {
+	color: gray
+}
+
+html[data-theme=dark] .CommentList-expendCollapseButton {
+	color: #606a80
+}
+
+.CommentItem {
+	outline: none
+}
+
+.CommentItem {
+	position: relative;
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	padding: 12px 20px 10px;
+	font-size: 15px
+}
+
+.CommentItem:not(:first-child):after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	margin: 0 20px;
+	border-bottom-style: solid;
+	border-bottom-color: #f6f6f6;
+	border-bottom-width: 1px;
+	content: ""
+}
+
+@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi) {
+	.CommentItem:not(:first-child):after {
+		border-bottom-width: .5px
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio:3),(min-resolution:288dpi) {
+	.CommentItem:not(:first-child):after {
+		border-bottom-width: .33333px
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio:4),(min-resolution:384dpi) {
+	.CommentItem:not(:first-child):after {
+		border-bottom-width: .25px
+	}
+}
+
+html[data-theme=dark] .CommentItem:not(:first-child):after {
+	border-bottom-color: #2e2e2e
+}
+
+.CommentItem-deletedContent {
+	padding: 16px 0;
+	font-size: 14px;
+	color: #8590a6;
+	text-align: center
+}
+
+html[data-theme=dark] .CommentItem-deletedContent {
+	color: #606a80
+}
+
+.CommentItem-meta {
+	position: relative;
+	height: 27px;
+	padding-right: 3px;
+	padding-left: 1px;
+	margin-bottom: 5px;
+	line-height: 24px
+}
+
+.CommentItem-avatar {
+	margin-right: 8px
+}
+
+.CommentItem-avatar .UserLink-avatar {
+	vertical-align: top
+}
+
+.CommentItem-reply,.CommentItem-roleInfo {
+	color: #8590a6
+}
+
+html[data-theme=dark] .CommentItem-reply,html[data-theme=dark] .CommentItem-roleInfo {
+	color: #606a80
+}
+
+.CommentItem-reviewing {
+	margin-left: 8px
+}
+
+.CommentItem-reply {
+	margin-right: 8px;
+	margin-left: 8px
+}
+
+.CommentItem-roleInfo {
+	margin-right: -8px
+}
+
+.CommentItem-time {
+	float: right;
+	font-size: 14px;
+	color: #8590a6
+}
+
+html[data-theme=dark] .CommentItem-time {
+	color: #606a80
+}
+
+.CommentItem-content {
+	margin-bottom: 6px;
+	line-height: 25px
+}
+
+.CommentItem-content p {
+	margin: 0
+}
+
+.CommentItem-editor {
+	margin-bottom: 8px
+}
+
+.CommentItem-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 24px;
+	font-size: 14px;
+	line-height: 24px
+}
+
+.CommentItem-footer .Button+.Button {
+	margin-left: 20px
+}
+
+.CommentItem-mobileFooter .Button+.Button {
+	margin-left: 0
+}
+
+.CommentItem-hoverBtn {
+	opacity: 0;
+	transition: opacity .2s
+}
+
+.CommentItem:hover .CommentItem-hoverBtn {
+	opacity: 1
+}
+
+.CommentItem-walleTag {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	font-size: 14px;
+	color: #8590a6;
+	margin-left: 16px;
+	margin-right: 16px
+}
+
+html[data-theme=dark] .CommentItem-walleTag {
+	color: #606a80
+}
+
+.CommentItem-walleIcon {
+	margin-right: 4px
+}
+
+.CommentItem-likeBtn:disabled {
+	opacity: 1
+}
+
+.CommentItem-likeBtn.is-liked {
+	color: #0084ff
+}
+
+.CommentItem-likeBtn.is-liked:hover {
+	color: #175199
+}
+
+.CommentItem-likeBtn.is-liked:hover .Icon {
+	fill: currentColor
+}
+
+html[data-theme=dark] .CommentItem-likeBtn.is-liked:hover {
+	color: #175199
+}
+
+.CommentItem-likeBtn.is-liked .Icon {
+	fill: currentColor
+}
+
+html[data-theme=dark] .CommentItem-likeBtn.is-liked {
+	color: #3a76d0
+}
+
+.CommentItem--highlighted {
+	-webkit-animation: highlight 1.6s ease-out;
+	animation: highlight 1.6s ease-out
+}
+
+.CommentEditor .RichText {
+	min-height: auto!important
+}
+
+.CommentEditor--normal {
+	position: relative;
+	transition: padding-right .3s ease;
+}
+
+.CommentEditor--normal .CommentEditor-input {
+	overflow: hidden;
+	width: 100%;
+	background: #f6f6f6;
+	&.is_focus {
+		background: #fff;
+	}
+}
+
+.CommentEditor--normal .Editable-unstyled {
+	margin: 0!important
+}
+
+.CommentEditor--normal.CommentEditor--active {
+	padding-right: 94px;
+}
+
+.CommentEditor--normal.CommentEditor--active .CommentEditor-singleButton {
+	-webkit-transform: scale(1);
+	transform: scale(1)
+}
+
+.CommentEditor--inCommentItem .CommentEditor-actions {
+	margin-top: 16px;
+	text-align: right
+}
+
+.CommentEditor--inCommentItem .CommentEditor-actions .Button {
+	line-height: 34px
+}
+
+.CommentEditor--inCommentItem .CommentEditor-actions .Button+.Button {
+	margin-left: 20px
+}
+
+.CommentEditor-singleButton {
+	position: absolute;
+	right: 16px;
+	bottom: 12px;
+	line-height: 34px!important;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+	transition: opacity .3s ease,-webkit-transform .3s ease;
+	transition: opacity .3s ease,transform .3s ease;
+	transition: opacity .3s ease,transform .3s ease,-webkit-transform .3s ease
+}
+
+.CommentEditor-singleButton:disabled {
+	cursor: not-allowed
+}
+
+.CommentEditor-input {
+	font-size: 15px
+}
+
+.CommentEditor-input .Editable {
+	background: #f6f6f6
+}
+
+.CommentEditor-input .Editable--focus {
+	background: #fff
+}
+
+html[data-theme=dark] .CommentEditor-input .Editable--focus {
+	background: #1a1a1a
+}
+
+html[data-theme=dark] .CommentEditor-input .Editable {
+	background: #2e2e2e
+}
+
+.CommentEditor-input .Dropzone {
+	min-height: auto!important
+}
+
+.CommentEditor-input .DraftEditor-root {
+	padding: 5px 12px!important
+}
+
+.CommentEditor-startCommentButton {
+	width: 100%
+}
+
+.CommentEditor-hiddenInput {
+	position: absolute;
+	z-index: -1;
+	top: -9999px
+}
+
+.CommentEditor-input--mobile {
+	min-height: 208px
+}
+
+.CommentEditor-input--mobile,.CommentEditor-input--mobile.is-focus {
+	border: none
+}
+
+.CommentEditor-input--mobile .Editable {
+	background: #fff
+}
+
+html[data-theme=dark] .CommentEditor-input--mobile .Editable {
+	background: #1a1a1a
+}
+
+.CommentEditor-modalButtons {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 8px 20px;
+	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb
+}
+
+.CommentEditor-modalButtons .Button {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.CommentEditor-modalButtons .Button+.Button {
+	margin-left: 16px
+}
+
+html[data-theme=dark] .CommentEditor-modalButtons {
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444
+}
+
+.Comments-pattern-loading {
+	height: 96px;
+	display: flex;
+	justify-content: center;
+	align-items: center
+}

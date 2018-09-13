@@ -1,0 +1,80 @@
+.Card {
+	margin-bottom: 10px;
+	background: #fff;
+	overflow: hidden;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1);
+	box-sizing: border-box
+}
+
+html[data-theme=dark] .Card {
+	box-shadow: 0 1px 3px rgba(0,0,0,.3)
+}
+
+.Card:last-child {
+	margin-bottom: 0
+}
+
+html[data-theme=dark] .Card {
+	background: #1a1a1a
+}
+
+.Card-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 50px;
+	padding: 0 20px;
+	border-bottom: 1px solid #f6f6f6;
+	box-sizing: border-box
+}
+
+.Card-header:last-child {
+	border-bottom: none
+}
+
+html[data-theme=dark] .Card-header {
+	border-bottom: 1px solid #2e2e2e
+}
+
+.Card-headerText {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 600;
+	font-synthesis: style
+}
+
+html[data-ios] .Card-headerText {
+	font-weight: 500
+}
+
+html[data-android] .Card-headerText {
+	font-weight: 700
+}
+
+.Card-section {
+	padding: 16px 20px;
+	position: relative
+}
+
+.Card-section+.Card-section:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 20px;
+	display: block;
+	border-bottom: 1px solid #f6f6f6;
+	content: ""
+}
+
+html[data-theme=dark] .Card-section+.Card-section:after {
+	border-bottom: 1px solid #2e2e2e
+}

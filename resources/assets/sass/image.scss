@@ -1,0 +1,226 @@
+.FocusPlugin--unfocused:hover {
+	cursor: default;
+	box-shadow: 0 0 0 2px rgba(0,132,255,.3)
+}
+
+html[data-theme=dark] .FocusPlugin--unfocused:hover {
+	box-shadow: 0 0 0 2px rgba(58,118,208,.3)
+}
+
+.FocusPlugin--focused {
+	cursor: default;
+	box-shadow: 0 0 0 2px #0084ff
+}
+
+html[data-theme=dark] .FocusPlugin--focused {
+	box-shadow: 0 0 0 2px #3a76d0
+}
+
+.Image {
+	max-width: 100%;
+	margin: 0 auto
+}
+
+.Image[data-size=small] {
+	max-width: 40%
+}
+
+.Image--isBlock {
+	display: block
+}
+
+.Editable-imageUploader {
+	text-align: center
+}
+
+.Editable-imageUploader-layout {
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	vertical-align: top
+}
+
+.Editable-imageUploader-layout.is-fullWidth {
+	width: 100%
+}
+
+.Editable-imageUploader-image {
+	display: block;
+	max-width: 100%;
+	opacity: .3
+}
+
+.Editable-imageUploader-placeholder {
+	height: 192px;
+	background-color: #ebebeb
+}
+
+html[data-theme=dark] .Editable-imageUploader-placeholder {
+	background-color: #444
+}
+
+.Editable-imageUploader-status {
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: 100%
+}
+
+.Editable-imageUploader-statusText {
+	font-size: 28px;
+	line-height: 40px;
+	color: #8590a6
+}
+
+html[data-theme=dark] .Editable-imageUploader-statusText {
+	color: #606a80
+}
+
+.Editable-imageUploader-status.is-error .Editable-imageUploader-statusText {
+	color: #f36
+}
+
+html[data-theme=dark] .Editable-imageUploader-status.is-error .Editable-imageUploader-statusText {
+	color: #d92155
+}
+
+.Editable-imageUploader-retry {
+	margin-top: 4px;
+	font-size: 16px;
+	line-height: 32px
+}
+
+.Editable-imageUploader-retry .Button {
+	font-size: inherit
+}
+
+.Editable-imageUploader-progress {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 4px;
+	background-color: #0084ff
+}
+
+.Editable-imageUploader-progress.is-error {
+	background-color: #f36
+}
+
+html[data-theme=dark] .Editable-imageUploader-progress.is-error {
+	background-color: #d92155
+}
+
+.Editable-imageUploader-progress .LoadingBar {
+	position: relative;
+	height: 100%;
+	background-color: hsla(0,0%,100%,.3)
+}
+
+html[data-theme=dark] .Editable-imageUploader-progress .LoadingBar {
+	background-color: rgba(26,26,26,.3)
+}
+
+html[data-theme=dark] .Editable-imageUploader-progress {
+	background-color: #3a76d0
+}
+
+.Image-caption.is-placeholder {
+	color: #bfbfbf
+}
+
+html[data-theme=dark] .Image-caption.is-placeholder {
+	color: gray
+}
+
+.Image-caption.is-editing {
+	opacity: 0
+}
+
+.Image-captionInput {
+	position: absolute;
+	z-index: 203
+}
+
+.Image-captionInput textarea {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	border: none;
+	font: inherit;
+	font-size: .9em;
+	line-height: 1.5;
+	text-align: center;
+	color: #8590a6;
+	background: none;
+	resize: none
+}
+
+.Image-captionInput textarea::-webkit-input-placeholder {
+	color: #bfbfbf
+}
+
+.Image-captionInput textarea:-ms-input-placeholder {
+	color: #bfbfbf
+}
+
+.Image-captionInput textarea::placeholder {
+	color: #bfbfbf
+}
+
+html[data-theme=dark] .Image-captionInput textarea::-webkit-input-placeholder {
+	color: gray
+}
+
+html[data-theme=dark] .Image-captionInput textarea:-ms-input-placeholder {
+	color: gray
+}
+
+html[data-theme=dark] .Image-captionInput textarea::placeholder {
+	color: gray
+}
+
+.Image-captionInput textarea:focus {
+	outline: none
+}
+
+html[data-theme=dark] .Image-captionInput textarea {
+	color: #606a80
+}
+
+.Image-resizer {
+	padding: 8px
+}
+
+.Image-resizerButton {
+	padding: 0 8px;
+	vertical-align: middle
+}
+
+.Image-resizerButton .Zi {
+	display: block
+}
+
+.Image-resizerButton.is-active {
+	color: #0084ff
+}
+
+html[data-theme=dark] .Image-resizerButton.is-active {
+	color: #3a76d0
+}

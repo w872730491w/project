@@ -1,0 +1,188 @@
+.RichContent {
+	line-height: 1.67
+}
+
+.RichContent b .UserLink-link {
+	font-weight: inherit
+}
+
+.RichContent.is-collapsed .RichContent-inner {
+	max-height: 100px
+}
+
+.RichContent--unescapable.is-collapsed {
+	position: relative;
+	overflow: hidden
+}
+
+.RichContent--unescapable.is-collapsed .RichContent-inner {
+	position: relative;
+	transition: max-height .32s cubic-bezier(.95,.05,.795,.035),-webkit-mask-size .22s cubic-bezier(.95,.05,.795,.035);
+	transition: mask-size .22s cubic-bezier(.95,.05,.795,.035),max-height .32s cubic-bezier(.95,.05,.795,.035);
+	transition: mask-size .22s cubic-bezier(.95,.05,.795,.035),max-height .32s cubic-bezier(.95,.05,.795,.035),-webkit-mask-size .22s cubic-bezier(.95,.05,.795,.035);
+	-webkit-mask-image: linear-gradient(#1a1a1a calc(100% - 8rem),transparent calc(100% - 2.8rem));
+	mask-image: linear-gradient(#1a1a1a calc(100% - 8rem),transparent calc(100% - 2.8rem));
+	-webkit-mask-size: 100% 100%;
+	mask-size: 100% 100%
+}
+
+html[data-theme=dark] .RichContent--unescapable.is-collapsed .RichContent-inner {
+	-webkit-mask-image: linear-gradient(#999 calc(100% - 8rem),transparent calc(100% - 2.8rem));
+	mask-image: linear-gradient(#999 calc(100% - 8rem),transparent calc(100% - 2.8rem))
+}
+
+.RichContent--unescapable.is-collapsed .ContentItem-actions {
+	position: relative
+}
+
+.RichContent--unescapable.is-collapsed .ContentItem-rightButton {
+	position: absolute;
+	z-index: 1;
+	bottom: 75px;
+	left: 0;
+	width: 100%;
+	color: #175199;
+	font-size: 15px
+}
+
+html[data-theme=dark] .RichContent--unescapable.is-collapsed .ContentItem-rightButton {
+	color: #175199
+}
+
+@media (min-width:690px) {
+	.RichContent.is-collapsed {
+		cursor: pointer;
+		transition: color .14s ease-out
+	}
+
+	.RichContent.is-collapsed .CopyrightRichText-richText {
+		pointer-events: none
+	}
+
+	.RichContent.is-collapsed .RichContent-inner:hover {
+		color: #646464
+	}
+
+	html[data-theme=dark] .RichContent.is-collapsed .RichContent-inner:hover {
+		color: #999
+	}
+}
+
+.RichContent.is-collapsed:not(.RichContent--unescapable) .CopyrightRichText-richText {
+	white-space: normal
+}
+
+.RichContent-inner {
+	margin-top: 9px;
+	margin-bottom: -4px;
+	overflow: hidden
+}
+
+.RichContent-cover {
+	position: relative;
+	width: 190px;
+	height: 105px;
+	margin-top: -2px;
+	margin-right: 18px;
+	margin-bottom: 4px;
+	float: left;
+	overflow: hidden;
+	background-position: 50%;
+	background-size: cover;
+	border-radius: 4px;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0)
+}
+
+.RichContent-cover+.RichContent-inner {
+	margin-top: 16px
+}
+
+.RichContent-cover:after {
+	position: absolute;
+	z-index: 1;
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: rgba(26,26,26,.02);
+	content: ""
+}
+
+html[data-theme=dark] .RichContent-cover:after {
+	background: hsla(0,0%,60%,.02)
+}
+
+.RichContent-cover .VagueImage {
+	vertical-align: top
+}
+
+.RichContent-cover-play {
+	position: absolute;
+	z-index: 2;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%)
+}
+
+.RichContent-cover-play .Icon {
+	display: block
+}
+
+.RichContent-cover-inner {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	overflow: hidden
+}
+
+.RichContent-cover-inner img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0)
+}
+
+.RichContent-cover>img {
+	margin: 0!important
+}
+
+.RichContent-cover .zh-lightbox-thumb {
+	cursor: pointer!important
+}
+
+.RichContent-cover--mobile {
+	float: none;
+	width: 100%;
+	height: 0;
+	padding: 21% 0;
+	margin: 10px 0 -8px!important
+}
+
+@media (max-width:320px) {
+	.RichContent-collapsedText {
+		display: none
+	}
+}
+
+.RichContent-actions.is-fixed {
+	-webkit-animation: .2s slideInUp;
+	animation: .2s slideInUp
+}
+
+.RichContent-videoMore {
+	text-align: center;
+	font-size: 14px;
+	margin-top: 30px;
+	color: #0084ff
+}
+
+html[data-theme=dark] .RichContent-videoMore {
+	color: #3a76d0
+}

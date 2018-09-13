@@ -1,0 +1,1062 @@
+.Editable-toolbar {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	background: #fff;
+	border-bottom: 1px solid #ebebeb;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+.isToolbarSticky .Editable-toolbar,.Sticky.is-fixed .Editable-toolbar {
+	border-top: none!important;
+	border-bottom: none!important
+}
+
+.isToolbarSticky .Editable-toolbar:after,.Sticky.is-fixed .Editable-toolbar:after {
+	content: " ";
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 100%;
+	pointer-events: none;
+	height: 3px;
+	background: radial-gradient(ellipse at 50% 1%,rgba(26,26,26,.1),hsla(0,0%,100%,0) 80%)
+}
+
+html[data-theme=dark] .isToolbarSticky .Editable-toolbar:after,html[data-theme=dark] .Sticky.is-fixed .Editable-toolbar:after {
+	background: radial-gradient(ellipse at 50% 1%,hsla(0,0%,60%,.1),rgba(26,26,26,0) 80%)
+}
+
+html[data-theme=dark] .Editable-toolbar {
+	background: #1a1a1a;
+	border-bottom: 1px solid #444
+}
+
+.Editable-toolbar-separator {
+	background-color: #ebebeb;
+	display: inline-block;
+	height: 20px;
+	margin: 0 3px;
+	vertical-align: middle;
+	width: 1px
+}
+
+html[data-theme=dark] .Editable-toolbar-separator {
+	background-color: #444
+}
+
+.Editable-control {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border: 1px solid transparent;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	height: 26px;
+	margin: 0 2px;
+	white-space: nowrap
+}
+
+.Editable-control .Zi {
+	fill: #8590a6
+}
+
+html[data-theme=dark] .Editable-control .Zi {
+	fill: #606a80
+}
+
+.Editable-control:not(:disabled):hover {
+	background: #f6f6f6;
+	border-color: #ebebeb
+}
+
+html[data-theme=dark] .Editable-control:not(:disabled):hover {
+	background: #2e2e2e;
+	border-color: #444
+}
+
+.Editable-control.is-active .Zi {
+	fill: #0084ff
+}
+
+html[data-theme=dark] .Editable-control.is-active .Zi {
+	fill: #3a76d0
+}
+
+.Editable-control .Zi,.Editable-control span {
+	vertical-align: middle
+}
+
+.Editable-control .Zi+span {
+	margin-left: 6px
+}
+
+.Editable-toolbarMenu {
+	height: 26px;
+	margin-left: auto
+}
+
+.Editable-toolbarMenuItem {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	line-height: 36px
+}
+
+.Editable-toolbarMenuItem .Zi {
+	margin-right: 4px
+}
+
+.Editable-videoModal .Modal-footer {
+	padding: 12px 24px
+}
+
+.Editable-videoModal-title {
+	font-size: 20px;
+	font-weight: 500;
+	color: #1a1a1a
+}
+
+html[data-theme=dark] .Editable-videoModal-title {
+	color: #999
+}
+
+.Editable-videoModal-uploader {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 220px;
+	border: 2px dashed #ebebeb;
+	border-radius: 10px;
+	cursor: pointer
+}
+
+.Editable-videoModal-uploader:hover {
+	border-color: #8590a6
+}
+
+.Editable-videoModal-uploader:hover .Zi {
+	fill: #8590a6
+}
+
+html[data-theme=dark] .Editable-videoModal-uploader:hover .Zi {
+	fill: #606a80
+}
+
+html[data-theme=dark] .Editable-videoModal-uploader:hover {
+	border-color: #606a80
+}
+
+.Editable-videoModal-uploader input {
+	display: none
+}
+
+html[data-theme=dark] .Editable-videoModal-uploader {
+	border: 2px dashed #444
+}
+
+.Editable-videoModal-uploader-icon {
+	text-align: center;
+	display: block
+}
+
+.Editable-videoModal-uploader-icon .Zi {
+	vertical-align: middle;
+	fill: #ebebeb
+}
+
+html[data-theme=dark] .Editable-videoModal-uploader-icon .Zi {
+	fill: #444
+}
+
+.Editable-videoModal-uploader-text {
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 30px;
+	text-align: center
+}
+
+.Editable-videoModal-uploader-tip {
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	color: #8590a6
+}
+
+html[data-theme=dark] .Editable-videoModal-uploader-tip {
+	color: #606a80
+}
+
+.Editable-docModal .Modal-footer {
+	padding: 12px 24px
+}
+
+.Editable-docModal input[type=file] {
+	display: none
+}
+
+.Editable-docModal-title {
+	font-size: 20px;
+	font-weight: 500;
+	color: #1a1a1a
+}
+
+html[data-theme=dark] .Editable-docModal-title {
+	color: #999
+}
+
+.Editable-docModal-uploader {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	box-sizing: border-box;
+	height: 220px;
+	border: 2px dashed #ebebeb;
+	border-radius: 10px;
+	cursor: pointer
+}
+
+.Editable-docModal-uploader:hover {
+	border-color: #8590a6
+}
+
+.Editable-docModal-uploader:hover .Zi {
+	fill: #8590a6
+}
+
+html[data-theme=dark] .Editable-docModal-uploader:hover .Zi {
+	fill: #606a80
+}
+
+html[data-theme=dark] .Editable-docModal-uploader:hover {
+	border-color: #606a80
+}
+
+html[data-theme=dark] .Editable-docModal-uploader {
+	border: 2px dashed #444
+}
+
+.Editable-docModal-uploader-icon {
+	text-align: center;
+	display: block
+}
+
+.Editable-docModal-uploader-icon .Zi {
+	vertical-align: middle;
+	fill: #ebebeb
+}
+
+html[data-theme=dark] .Editable-docModal-uploader-icon .Zi {
+	fill: #444
+}
+
+.Editable-docModal-uploader-text {
+	font-size: 18px;
+	line-height: 30px;
+	margin-top: 20px;
+	text-align: center
+}
+
+.Editable-docModal-uploader-tip {
+	font-size: 14px;
+	line-height: 30px;
+	text-align: center;
+	color: #8590a6
+}
+
+html[data-theme=dark] .Editable-docModal-uploader-tip {
+	color: #606a80
+}
+
+.Editable-docModal-fileName {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+
+.Editable-docModal-fileName .Zi {
+	fill: #0084ff;
+	margin-right: 4px
+}
+
+html[data-theme=dark] .Editable-docModal-fileName .Zi {
+	fill: #3a76d0
+}
+
+.Editable-docModal-loading {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin: 36px 0 12px
+}
+
+.Editable-docModal-fail,.Editable-docModal-loading {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.Editable-docModal-fail {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	text-align: center
+}
+
+.Editable-docModal-failHint {
+	color: #f1403c;
+	font-size: 16px;
+	margin-top: 36px;
+	font-weight: 600;
+	font-synthesis: style
+}
+
+html[data-ios] .Editable-docModal-failHint {
+	font-weight: 500
+}
+
+html[data-android] .Editable-docModal-failHint {
+	font-weight: 700
+}
+
+html[data-theme=dark] .Editable-docModal-failHint {
+	color: #b7302d
+}
+
+.Editable-docModal-retryButton {
+	margin: 32px 0 10px;
+	width: 220px
+}
+
+.Editable-languageSuggestions {
+	position: fixed;
+	z-index: 203
+}
+
+.Editable-languageSuggestionsInput {
+	cursor: pointer
+}
+
+.Editable-languageSuggestionsInput input {
+	cursor: inherit
+}
+
+.Editable-languageSuggestionsInput input:focus {
+	cursor: text
+}
+
+.Editable-languageSuggestionsMenu {
+	max-height: 300px;
+	margin-top: -8px;
+	margin-bottom: -8px;
+	overflow-y: auto
+}
+
+.Editable-languageSuggestionsMenuContainer {
+	overflow-y: hidden
+}
+
+.Editable-notification-layout {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between
+}
+
+.Editable-notification-actions,.Editable-notification-layout {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row
+}
+
+.Editable-notification-actions {
+	margin: 0 -12px
+}
+
+.Editable-notification-action {
+	margin: 0 12px
+}
+
+.Editable .RichText {
+	cursor: text
+}
+
+.public-DraftEditorPlaceholder-root {
+	position: absolute;
+	pointer-events: none
+}
+
+.Editable--hidePlaceholder .public-DraftEditorPlaceholder-root {
+	display: none
+}
+
+.Editable-styled,.Editable-unstyled {
+	margin: 0 0 .72em
+}
+
+.Editable-styled:first-child,.Editable-unstyled:first-child {
+	margin-top: 0
+}
+
+.Editable-styled:last-child,.Editable-unstyled:last-child {
+	margin-bottom: 0
+}
+
+.DraftEditor-root blockquote+blockquote {
+	margin-top: -1em
+}
+
+.DraftEditor-root pre.public-DraftStyleDefault-pre {
+	border-radius: 4px
+}
+
+.DraftEditor-root pre.public-DraftStyleDefault-pre pre {
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	overflow: visible;
+	overflow: initial
+}
+
+.public-DraftEditorPlaceholder-root {
+	position: absolute;
+	pointer-events: none
+}
+
+.Editable-VideoTitleInput-container {
+	-ms-flex-item-align: stretch;
+	align-self: stretch;
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	width: 100%
+}
+
+html[data-theme=dark] .Editable-VideoTitleInput-container {
+	background: #1a1a1a
+}
+
+.Editable-VideoTitleInput-innerContainer {
+	cursor: text;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 0 16px
+}
+
+.Editable-VideoTitleInput-innerContainer--isBeforeIconShown {
+	padding: 0 10px
+}
+
+.Editable-VideoTitleInput-beforeIcon,html[data-theme=dark] .Editable-VideoTitleInput-beforeIcon {
+	color: gray
+}
+
+.Editable-VideoTitleInput-value {
+	font-size: 15px;
+	line-height: 48px
+}
+
+.Editable-VideoTitleInput-value--noContent,html[data-theme=dark] .Editable-VideoTitleInput-value--noContent {
+	color: gray
+}
+
+.Editable-VideoTitleInput {
+	border: none;
+	box-sizing: border-box;
+	font-size: 15px;
+	height: 48px;
+	outline: none;
+	padding: 0;
+	width: 100%
+}
+
+.Editable-VideoTitleInput::-webkit-input-placeholder {
+	color: gray
+}
+
+.Editable-VideoTitleInput:-ms-input-placeholder {
+	color: gray
+}
+
+.Editable-VideoTitleInput::placeholder {
+	color: gray
+}
+
+html[data-theme=dark] .Editable-VideoTitleInput::-webkit-input-placeholder {
+	color: gray
+}
+
+html[data-theme=dark] .Editable-VideoTitleInput:-ms-input-placeholder {
+	color: gray
+}
+
+html[data-theme=dark] .Editable-VideoTitleInput::placeholder {
+	color: gray
+}
+
+.VideoCard {
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #ebebeb;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+}
+
+html[data-theme=dark] .VideoCard {
+	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+	border: 1px solid #444
+}
+
+.VideoCard-link {
+	display: block
+}
+
+.VideoCard-layout {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.VideoCard-poster {
+	width: 120px;
+	height: 90px;
+	background-color: #ebebeb
+}
+
+.VideoCard-poster img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover
+}
+
+html[data-theme=dark] .VideoCard-poster {
+	background-color: #444
+}
+
+.VideoCard-video {
+	position: relative;
+	width: 100%
+}
+
+.VideoCard-video:before {
+	display: block;
+	padding-top: 56.25%;
+	content: ""
+}
+
+.VideoCard-video-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%
+}
+
+.VideoCard-thumbnail {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #ebebeb
+}
+
+.VideoCard-thumbnail img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover
+}
+
+html[data-theme=dark] .VideoCard-thumbnail {
+	background-color: #444
+}
+
+.VideoCard-play-button {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 64px;
+	height: 64px;
+	margin: auto;
+	transition: -webkit-transform .3s;
+	transition: transform .3s;
+	transition: transform .3s,-webkit-transform .3s
+}
+
+.VideoCard-playIcon {
+	display: block
+}
+
+html[data-theme=dark] .VideoCard-playIcon {
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
+	-webkit-filter: brightness(.7);
+	filter: brightness(.7)
+}
+
+.VideoCard--interactive .VideoCard-video:hover .VideoCard-play-button {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1)
+}
+
+.VideoCard-content {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding: 10px 16px;
+	overflow: hidden;
+	box-sizing: border-box
+}
+
+.VideoCard-VideoTitleInputHolder {
+	height: 48px;
+	width: 100%
+}
+
+.VideoCard-title {
+	overflow: hidden;
+	height: 28px;
+	font-size: 16px;
+	line-height: 28px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.VideoCard--interactive .VideoCard-link .VideoCard-content:hover .VideoCard-title,html[data-theme=dark] .VideoCard--interactive .VideoCard-link .VideoCard-content:hover .VideoCard-title {
+	color: #175199
+}
+
+.VideoCard-description {
+	height: 25px;
+	margin-top: 5px;
+	line-height: 25px
+}
+
+.VideoCard-source {
+	display: inline-block;
+	margin-right: 10px;
+	color: #8590a6
+}
+
+html[data-theme=dark] .VideoCard-source {
+	color: #606a80
+}
+
+.VideoCard-badge {
+	display: inline-block;
+	padding: 0 8px;
+	color: #8590a6;
+	background-color: #f6f6f6;
+	border-radius: 3px
+}
+
+html[data-theme=dark] .VideoCard-badge {
+	color: #606a80;
+	background-color: #2e2e2e
+}
+
+.VideoCard-player {
+	width: 100%;
+	height: 100%;
+	background-color: #1a1a1a
+}
+
+.VideoCard-player .Embed,.VideoCard-player iframe {
+	display: block;
+	width: 100%;
+	height: 100%
+}
+
+html[data-theme=dark] .VideoCard-player {
+	background-color: #999
+}
+
+.VideoCard-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: #fff
+}
+
+.VideoCard-overlay.is-loading {
+	opacity: 0
+}
+
+.VideoCard-mask,html[data-theme=dark] .VideoCard-overlay {
+	background-color: #1a1a1a
+}
+
+.VideoCard-mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	transition: opacity .3s,visibility .3s
+}
+
+.VideoCard-mask:not(.is-shown) {
+	opacity: 0;
+	visibility: hidden
+}
+
+html[data-theme=dark] .VideoCard-mask {
+	background-color: #999
+}
+
+.VideoCard--mobile .VideoCard-poster {
+	width: 100px;
+	height: 75px
+}
+
+.VideoCard--mobile .VideoCard-video:hover .VideoCard-play-button {
+	-webkit-transform: scale(1);
+	transform: scale(1)
+}
+
+.VideoCard--mobile .VideoCard-content {
+	padding: 10px 12px
+}
+
+.VideoCard--mobile .VideoCard-title {
+	font-size: 16px
+}
+
+.VideoCard--mobile .VideoCard-description {
+	margin-top: 0;
+	font-size: 12px
+}
+
+.Editable-videoCensorList {
+	background: rgba(241,64,60,.1);
+	border-radius: 4px;
+	color: #f1403c;
+	font-size: 15px;
+	margin-top: 10px;
+	padding: 10px 18px 10px 13px
+}
+
+html[data-theme=dark] .Editable-videoCensorList {
+	background: rgba(183,48,45,.1);
+	color: #b7302d
+}
+
+.Editable-videoCensorItem {
+	line-height: 19px;
+	margin-bottom: 5px
+}
+
+.Editable-videoCensorItem:last-child {
+	margin-bottom: 0
+}
+
+.Editable-videoCensorItem:before {
+	content: "\2022"
+}
+
+.Editable-videoCensorItem span {
+	font-weight: 700
+}
+
+.Editable-video {
+	margin: 16px 0;
+	border-radius: 4px
+}
+
+.Video-uploadPosterButton {
+	background: rgba(26,26,26,.5);
+	border: 1px solid hsla(0,0%,100%,.3);
+	border-radius: 3px;
+	height: 32px;
+	width: 109px;
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	text-align: center;
+	line-height: 32px;
+	cursor: pointer
+}
+
+.Video-uploadPosterButton p {
+	color: #fff;
+	font-size: 14px;
+	margin: 0!important
+}
+
+html[data-theme=dark] .Video-uploadPosterButton p {
+	color: #1a1a1a
+}
+
+html[data-theme=dark] .Video-uploadPosterButton {
+	background: hsla(0,0%,60%,.5);
+	border: 1px solid rgba(26,26,26,.3)
+}
+
+.Editable-video--titleError .Editable-VideoTitleInput-afterIcon {
+	color: #f1403c
+}
+
+html[data-theme=dark] .Editable-video--titleError .Editable-VideoTitleInput-afterIcon {
+	color: #b7302d
+}
+
+.Editable-video--posterError .Video-uploadPosterButton {
+	background: #f1403c;
+	border: none
+}
+
+html[data-theme=dark] .Editable-video--posterError .Video-uploadPosterButton {
+	background: #b7302d
+}
+
+.Editable-videoUploader {
+	margin: 16px 0;
+	border-radius: 4px
+}
+
+.Editable-videoUploader-thumbnail {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%
+}
+
+.Editable-videoUploader-text {
+	text-align: center;
+	position: relative;
+	color: #8590a6
+}
+
+html[data-theme=dark] .Editable-videoUploader-text {
+	color: #606a80
+}
+
+.Editable-videoUploader-status {
+	font-size: 28px;
+	line-height: 40px
+}
+
+.Editable-videoUploader-size {
+	margin-top: 10px;
+	font-size: 14px;
+	line-height: 20px
+}
+
+.Editable-videoUploader-retry {
+	margin-top: 4px;
+	font-size: 16px;
+	line-height: 32px
+}
+
+.Editable-videoUploader-retry .Button {
+	font-size: inherit
+}
+
+.Editable-videoUploader-retry .Button:hover {
+	background-color: transparent!important;
+	background-color: initial!important
+}
+
+.Editable-videoUploader-progress {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	height: 4px;
+	background-color: rgba(26,26,26,.05)
+}
+
+html[data-theme=dark] .Editable-videoUploader-progress {
+	background-color: hsla(0,0%,60%,.05)
+}
+
+.Editable-videoUploader-progress-bar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: #0084ff
+}
+
+.Editable-videoUploader-progress-bar.is-error {
+	background-color: #f36
+}
+
+html[data-theme=dark] .Editable-videoUploader-progress-bar.is-error {
+	background-color: #d92155
+}
+
+html[data-theme=dark] .Editable-videoUploader-progress-bar {
+	background-color: #3a76d0
+}
+
+.Editable-videoUploader-progress .LoadingBar {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	background-color: hsla(0,0%,100%,.3)
+}
+
+html[data-theme=dark] .Editable-videoUploader-progress .LoadingBar {
+	background-color: rgba(26,26,26,.3)
+}
+
+.Editable-videoUploader-image {
+	position: absolute
+}
+
+.Editable-videoUploader-uploadPosterButton {
+	background: rgba(26,26,26,.5);
+	border: 1px solid hsla(0,0%,100%,.3);
+	border-radius: 3px;
+	height: 32px;
+	width: 109px;
+	position: absolute;
+	bottom: 16px;
+	right: 16px;
+	text-align: center;
+	line-height: 32px;
+	cursor: pointer
+}
+
+.Editable-videoUploader-uploadPosterButton p {
+	color: #fff;
+	font-size: 14px;
+	margin: 0!important
+}
+
+html[data-theme=dark] .Editable-videoUploader-uploadPosterButton p {
+	color: #1a1a1a
+}
+
+html[data-theme=dark] .Editable-videoUploader-uploadPosterButton {
+	background: hsla(0,0%,60%,.5);
+	border: 1px solid rgba(26,26,26,.3)
+}
+
+.Editable-videoUploader-imageMask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: hsla(0,0%,92%,.9)
+}
+
+html[data-theme=dark] .Editable-videoUploader-imageMask {
+	background: rgba(68,68,68,.9)
+}
+
+.VideoErrorCard-thumbnail {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: 100%
+}
+
+.VideoErrorCard-error {
+	font-size: 28px;
+	line-height: 40px;
+	text-align: center;
+	color: #8590a6
+}
+
+html[data-theme=dark] .VideoErrorCard-error {
+	color: #606a80
+}
+
+.Editable-videoError {
+	margin: 16px 0;
+	border-radius: 4px
+}
+
+.Editable-videoError--titleError .Editable-VideoTitleInput-afterIcon {
+	color: #f1403c
+}
+
+html[data-theme=dark] .Editable-videoError--titleError .Editable-VideoTitleInput-afterIcon {
+	color: #b7302d
+}
+
+.Editable-divider {
+	overflow: hidden
+}

@@ -1,0 +1,70 @@
+.TopstoryHeader {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	line-height: 58px;
+	padding: 0 20px
+}
+
+.TopstoryHeader a {
+	text-decoration: none
+}
+
+.TopstoryHeader-rightItem {
+	color: #8590a6;
+	transition: color .2s ease-in
+}
+
+.TopstoryHeader-rightItem:hover,html[data-theme=dark] .TopstoryHeader-rightItem:hover {
+	color: #175199
+}
+
+html[data-theme=dark] .TopstoryHeader-rightItem {
+	color: #606a80
+}
+
+.TopstoryHeader-navItem {
+	display: inline-block;
+	transition: color .2s ease-in;
+	font-size: 16px;
+	color: #1a1a1a
+}
+
+.TopstoryHeader-navItem .Icon {
+	margin-right: 8px
+}
+
+.TopstoryHeader-navItem:hover {
+	color: #175199;
+	cursor: pointer
+}
+
+html[data-theme=dark] .TopstoryHeader-navItem:hover {
+	color: #175199
+}
+
+.TopstoryHeader-navItem+.TopstoryHeader-navItem {
+	margin-left: 40px
+}
+
+html[data-theme=dark] .TopstoryHeader-navItem {
+	color: #999
+}
+
+.TopstoryHeader-navItemArticle svg,.TopstoryHeader-pinIcon {
+	position: relative;
+	top: -1px
+}
+
+.TopstoryHeader-pinIcon {
+	vertical-align: text-bottom;
+	fill: #8590a6;
+	margin-right: 4px
+}
+
+html[data-theme=dark] .TopstoryHeader-pinIcon {
+	fill: #606a80
+}

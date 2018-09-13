@@ -1,0 +1,1767 @@
+.TextArea {
+	padding: 4px 10px;
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: inherit;
+	line-height: 26px;
+	background: #f6f6f6;
+	border: 1px solid #ebebeb;
+	border-radius: 3px;
+	outline: none;
+	box-sizing: border-box;
+	transition: background .2s;
+	resize: none
+}
+
+.TextArea:focus {
+	background: #fff
+}
+
+html[data-theme=dark] .TextArea:focus {
+	background: #1a1a1a
+}
+
+.TextArea::-webkit-input-placeholder {
+	color: #8590a6
+}
+
+.TextArea:-ms-input-placeholder {
+	color: #8590a6
+}
+
+.TextArea::placeholder {
+	color: #8590a6
+}
+
+html[data-theme=dark] .TextArea::-webkit-input-placeholder {
+	color: #606a80
+}
+
+html[data-theme=dark] .TextArea:-ms-input-placeholder {
+	color: #606a80
+}
+
+html[data-theme=dark] .TextArea::placeholder {
+	color: #606a80
+}
+
+html[data-theme=dark] .TextArea {
+	background: #2e2e2e;
+	border: 1px solid #444
+}
+
+.DescriptionField-input {
+	width: 540px
+}
+
+.ProfileEdit-arrowIcon {
+    margin: 0 4px 0 8px;
+    transform: rotate(-90deg);
+}
+
+.HeadlineField-input {
+	width: 540px !important
+}
+
+.HeadlineField-buttonGroup {
+	display: inline-block
+}
+
+.HeadlineField-actions {
+	position: relative
+}
+
+.HomepageField-input {
+	width: 540px
+}
+
+.HomepageField-buttonGroup {
+	display: inline-block
+}
+
+.HomepageField-actions {
+	position: relative
+}
+
+.Field {
+	padding: 30px 0;
+	border-bottom: 1px solid #ebebeb
+}
+
+.Field .ButtonGroup .Button+.Button {
+	margin-left: 16px
+}
+
+html[data-theme=dark] .Field {
+	border-bottom: 1px solid #444
+}
+
+.Field-label {
+	position: absolute;
+	font-size: 15px;
+	font-weight: 600;
+	font-synthesis: style;
+	line-height: 36px;
+	color: #444
+}
+
+html[data-ios] .Field-label {
+	font-weight: 500
+}
+
+html[data-android] .Field-label {
+	font-weight: 700
+}
+
+html[data-theme=dark] .Field-label {
+	color: gray
+}
+
+.Field-content {
+	padding: 0 64px 0 140px;
+	line-height: 36px
+}
+
+.Field-list {
+	margin: 20px -10px 0
+}
+
+.Field-dot {
+	margin-right: 10px
+}
+
+.Field-input {
+	width: 180px
+}
+
+.Field-longInput {
+	width: 495px
+}
+
+.Field-autoComplete {
+	display: inline-block
+}
+
+.Field-autoComplete:not(:first-child) {
+	margin-left: 16px
+}
+
+.Field-card {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 440px;
+	padding: 8px 10px;
+	line-height: 24px;
+	cursor: move
+}
+
+.Field-card span {
+	margin-left: 12px;
+	font-size: 15px;
+	color: #1a1a1a
+}
+
+html[data-theme=dark] .Field-card span {
+	color: #999
+}
+
+.Field-hoveredCard {
+	background: #f6f6f6;
+	border-radius: 4px
+}
+
+html[data-theme=dark] .Field-hoveredCard {
+	background: #2e2e2e
+}
+
+.Field-draggingCard {
+	opacity: 1
+}
+
+.Field-delete {
+	position: absolute;
+	top: 50%;
+	right: 10px;
+	cursor: pointer;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.Field-avatar {
+	vertical-align: top
+}
+
+.Field-modify {
+	position: absolute;
+	margin-left: 16px;
+	line-height: inherit;
+	transition: opacity .1s
+}
+
+.Field-modify-hidden:not(:focus) {
+	opacity: 0
+}
+
+.Field .MaxLength {
+	position: absolute;
+	top: 30px;
+	right: 12px;
+	text-align: right
+}
+
+.Field-education .Field-content {
+	padding-right: 52px
+}
+
+.Field-line {
+	margin-bottom: 20px
+}
+
+.Field-select:not(:first-child) {
+	margin-left: 16px
+}
+
+.Field-select .Select-button {
+	height: 34px;
+	line-height: 34px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 0 5px 0 10px;
+	border-color: #ebebeb
+}
+
+html[data-theme=dark] .Field-select .Select-button {
+	border-color: #444
+}
+
+.Field-selectList>.Select-option:first-child {
+	display: none
+}
+
+.ActivityItem-meta {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+.ActivityItem-metaTitle {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.Tabs {
+	border-bottom: 1px solid #f6f6f6
+}
+
+html[data-theme=dark] .Tabs {
+	border-bottom: 1px solid #2e2e2e
+}
+
+.Tabs-item {
+	display: inline-block;
+	padding: 0 20px
+}
+
+.Tabs-link {
+	position: relative;
+	display: inline-block;
+	padding: 14px 0;
+	font-size: 16px;
+	line-height: 22px;
+	color: #1a1a1a;
+	text-align: center
+}
+
+.Tabs-link.is-active {
+	font-weight: 600;
+	font-synthesis: style
+}
+
+html[data-ios] .Tabs-link.is-active {
+	font-weight: 500
+}
+
+html[data-android] .Tabs-link.is-active {
+	font-weight: 700
+}
+
+.Tabs-link.is-active:after {
+	position: absolute;
+	right: 0;
+	bottom: -1px;
+	left: 0;
+	height: 3px;
+	background: #0084ff;
+	content: ""
+}
+
+html[data-theme=dark] .Tabs-link.is-active:after {
+	background: #3a76d0
+}
+
+html[data-theme=dark] .Tabs-link {
+	color: #999
+}
+
+.Tabs-meta {
+	margin-left: 6px;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	color: #999
+}
+
+html[data-theme=dark] .Tabs-meta {
+	color: #646464
+}
+
+.Mask {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	transition: opacity .2s ease-in
+}
+
+.Mask-hidden {
+	pointer-events: none;
+	opacity: 0
+}
+
+.Mask-mask {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	opacity: .4;
+	box-sizing: border-box
+}
+
+.Mask-mask--black {
+	background: #1a1a1a
+}
+
+html[data-theme=dark] .Mask-mask--black {
+	background: #999
+}
+
+.Mask-mask--white {
+	background: hsla(0,0%,100%,.95)
+}
+
+html[data-theme=dark] .Mask-mask--white {
+	background: rgba(26,26,26,.95)
+}
+
+.Mask-content {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 5;
+	color: #fff;
+	text-align: center;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%)
+}
+
+html[data-theme=dark] .Mask-content {
+	color: #1a1a1a
+}
+
+.Mask-content--full {
+	width: 100%;
+	height: 100%
+}
+
+.UserStatus {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	color: #1a1a1a;
+	text-align: center;
+	background-color: rgba(133,144,166,.08)
+}
+
+.UserStatus,.UserStatus .Button {
+	font-size: 15px
+}
+
+html[data-theme=dark] .UserStatus {
+	color: #999;
+	background-color: rgba(96,106,128,.08)
+}
+
+.UserStatus-warnText {
+	margin-left: 8px
+}
+
+.UserAvatar {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: top;
+	background-color: #fff;
+	border: 4px solid #fff;
+	border-radius: 8px
+}
+
+html[data-theme=dark] .UserAvatar {
+	background-color: #1a1a1a;
+	border: 4px solid #1a1a1a
+}
+
+.UserAvatar-inner {
+	vertical-align: top
+}
+
+.UserAvatar-holder,.UserAvatar-round {
+	width: 160px;
+	height: 160px
+}
+
+.UserAvatar-round {
+	border-radius: 50%
+}
+
+.UploadImageModal-modal {
+	text-align: center
+}
+
+.UploadImageModal-modal div {
+	display: block
+}
+
+.UploadImageModal-container {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto 30px;
+	cursor: move
+}
+
+.UploadImageModal-container canvas {
+	vertical-align: top
+}
+
+.UserAvatarEditor {
+	cursor: pointer;
+	position: relative
+}
+
+.UserAvatarEditor-avatar {
+	background: #f6f6f6;
+	border: 4px solid #fff;
+	border-radius: 8px
+}
+
+html[data-theme=dark] .UserAvatarEditor-avatar {
+	background: #2e2e2e;
+	border: 4px solid #1a1a1a
+}
+
+.UserAvatarEditor-title {
+	font-size: 24px;
+	color: #1a1a1a
+}
+
+html[data-theme=dark] .UserAvatarEditor-title {
+	color: #999
+}
+
+.UserAvatarEditor-subTitle {
+	font-size: 14px;
+	color: #8590a6
+}
+
+html[data-theme=dark] .UserAvatarEditor-subTitle {
+	color: #606a80
+}
+
+.UserAvatarEditor-range {
+	width: 200px;
+	margin: 20px 10px
+}
+
+.UserAvatarEditor-maskInner {
+	z-index: 4;
+	border: 4px solid #fff;
+	border-radius: 8px
+}
+
+html[data-theme=dark] .UserAvatarEditor-maskInner {
+	border: 4px solid #1a1a1a
+}
+
+.UserAvatarEditor-maskInnerText {
+	white-space: nowrap
+}
+
+.UserAvatarEditor-cameraIcon {
+	margin-bottom: 14px;
+	fill: #fff
+}
+
+html[data-theme=dark] .UserAvatarEditor-cameraIcon {
+	fill: #1a1a1a
+}
+
+.UserAvatarEditor-maskRoundInner {
+	border-radius: 50%
+}
+
+.UserCover {
+	position: relative;
+	height: 240px;
+	overflow: hidden;
+	background: #f6f6f6;
+	border-top-right-radius: 1px;
+	border-top-left-radius: 1px;
+	transition: height .3s
+}
+
+html[data-theme=dark] .UserCover {
+	background: #2e2e2e
+}
+
+.UserCover--colorBlock {
+	height: 132px;
+	background: #999
+}
+
+html[data-theme=dark] .UserCover--colorBlock {
+	background: #646464
+}
+
+.UserCover-image {
+	transition: -webkit-transform 6s ease-out;
+	transition: transform 6s ease-out;
+	transition: transform 6s ease-out,-webkit-transform 6s ease-out
+}
+
+.UserCover-image,.UserCover-image img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover
+}
+
+.DynamicColorButton {
+	color: #d3d3d3;
+	transition: color,border-color .3s
+}
+
+.DynamicColorButton svg {
+	fill: currentColor
+}
+
+html[data-theme=dark] .DynamicColorButton {
+	color: #2e2e2e
+}
+
+.DynamicColorButton--dark {
+	color: rgba(26,26,26,.6);
+	border-color: rgba(26,26,26,.12)
+}
+
+.DynamicColorButton--dark:hover {
+	background: rgba(26,26,26,.03)
+}
+
+html[data-theme=dark] .DynamicColorButton--dark:hover {
+	background: hsla(0,0%,60%,.03)
+}
+
+html[data-theme=dark] .DynamicColorButton--dark {
+	color: hsla(0,0%,60%,.6);
+	border-color: hsla(0,0%,60%,.12)
+}
+
+.DynamicColorButton--white {
+	color: hsla(0,0%,100%,.7);
+	border-color: hsla(0,0%,100%,.24)
+}
+
+.DynamicColorButton--white:hover {
+	background: hsla(0,0%,100%,.04)
+}
+
+html[data-theme=dark] .DynamicColorButton--white:hover {
+	background: rgba(26,26,26,.04)
+}
+
+html[data-theme=dark] .DynamicColorButton--white {
+	color: rgba(26,26,26,.7);
+	border-color: rgba(26,26,26,.24)
+}
+
+.UserCoverGuide {
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-top-right-radius: 1px;
+	border-top-left-radius: 1px
+}
+
+.UserCoverGuide.is-active .is-playing {
+	opacity: 1
+}
+
+.UserCoverGuide.is-active .UserCoverGuide-dialog {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	transform: translateY(0)
+}
+
+.UserCoverGuide-inner {
+	position: relative;
+	z-index: 2;
+	float: right;
+	padding: 24px
+}
+
+.UserCoverGuide-buttonContainer {
+	margin-bottom: 14px;
+	text-align: right
+}
+
+.UserCoverGuide-dialog {
+	position: relative;
+	width: 286px;
+	padding: 22px 16px;
+	background-color: #fff;
+	border-radius: 4px;
+	opacity: 0;
+	-webkit-transform: translateY(-10px);
+	transform: translateY(-10px);
+	transition: opacity .3s,-webkit-transform .3s;
+	transition: opacity .3s,transform .3s;
+	transition: opacity .3s,transform .3s,-webkit-transform .3s
+}
+
+.UserCoverGuide-dialog:after {
+	position: absolute;
+	right: 60px;
+	bottom: 100%;
+	border-color: transparent transparent #fff;
+	border-style: solid;
+	border-width: 7px;
+	content: ""
+}
+
+html[data-theme=dark] .UserCoverGuide-dialog:after {
+	border-color: transparent transparent #1a1a1a
+}
+
+html[data-theme=dark] .UserCoverGuide-dialog {
+	background-color: #1a1a1a
+}
+
+.UserCoverGuide-dialogContent {
+	font-size: 14px;
+	line-height: 1.7
+}
+
+.UserCoverGuide-dialogContent a {
+	color: #175199;
+	cursor: pointer
+}
+
+.UserCoverGuide-dialogContent a:hover {
+	text-decoration: underline
+}
+
+html[data-theme=dark] .UserCoverGuide-dialogContent a {
+	color: #175199
+}
+
+.UserCoverGuide-dialogDescription,.UserCoverGuide-dialogHead {
+	margin: 0 0 6px
+}
+
+.UserCoverGuide-item,.UserCoverGuide-items {
+	width: 100%;
+	height: 100%
+}
+
+.UserCoverGuide-item {
+	position: absolute;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0;
+	transition: opacity .5s
+}
+
+.UserCoverEditor {
+	position: relative
+}
+
+.UserCoverEditor-simpleEditButton {
+	position: absolute;
+	top: 24px;
+	right: 24px;
+	z-index: 2
+}
+
+.UserCoverEditor-editor {
+	position: relative;
+	z-index: 2
+}
+
+.UserCoverEditor-editor canvas {
+	vertical-align: top
+}
+
+.UserCoverEditor-action {
+	position: absolute;
+	width: 100%;
+	height: 80px;
+	background: #fff;
+	border-bottom: 1px solid #ebebeb;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+}
+
+html[data-theme=dark] .UserCoverEditor-action {
+	box-shadow: 0 1px 3px rgba(0,0,0,.3);
+	background: #1a1a1a;
+	border-bottom: 1px solid #444
+}
+
+.UserCoverEditor-actionContent {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100%;
+	margin: 0 24px
+}
+
+.UserCoverEditor-actionContent .Button+.Button {
+	margin-left: 16px
+}
+
+.UserCoverEditor-actionTitle {
+	font-size: 20px;
+	color: #1a1a1a
+}
+
+html[data-theme=dark] .UserCoverEditor-actionTitle {
+	color: #999
+}
+
+.UserCoverEditor-actionDescription {
+	font-size: 13px;
+	color: #8590a6
+}
+
+html[data-theme=dark] .UserCoverEditor-actionDescription {
+	color: #606a80
+}
+
+.UserCoverEditor-rangeInput {
+	display: inline-block
+}
+
+.UserCoverEditor-cameraIcon {
+	margin-bottom: 14px;
+	fill: #fff
+}
+
+html[data-theme=dark] .UserCoverEditor-cameraIcon {
+	fill: #1a1a1a
+}
+
+.UserCoverEditor-loadingCanvas {
+	width: 100%;
+	height: 100%
+}
+
+.UserCoverEditor-leftMasker {
+	left: 0;
+	position: absolute;
+	z-index: 20;
+	height: 100%;
+	width: calc(50% - 240px);
+	background-color: hsla(0,0%,100%,.5);
+	display: inline-block
+}
+
+html[data-theme=dark] .UserCoverEditor-leftMasker {
+	background-color: rgba(26,26,26,.5)
+}
+
+.UserCoverEditor-rightMasker {
+	right: 0;
+	position: absolute;
+	z-index: 20;
+	height: 100%;
+	width: calc(50% - 240px);
+	background-color: hsla(0,0%,100%,.5);
+	display: inline-block
+}
+
+html[data-theme=dark] .UserCoverEditor-rightMasker {
+	background-color: rgba(26,26,26,.5)
+}
+
+.ProfileHeader {
+	position: relative;
+	width: 1000px;
+	padding: 0 16px;
+	margin: 10px auto
+}
+
+.ProfileHeader-wrapper {
+	position: relative;
+	width: 100%;
+	background: #fff;
+	box-sizing: border-box
+}
+
+html[data-theme=dark] .ProfileHeader-wrapper {
+	background: #1a1a1a
+}
+
+.ProfileHeader-main {
+	position: relative;
+	margin: 0 20px 24px
+}
+
+.ProfileHeader-avatar {
+	position: absolute;
+	top: -25px;
+	left: 0;
+	z-index: 1
+}
+
+.ProfileEdit--org .ProfileHeader-avatar,.ProfileHeader--org .ProfileHeader-avatar {
+	top: -60px
+}
+
+.ProfileHeader-content {
+	padding-top: 16px;
+	padding-left: 32px;
+	border-left: 164px solid transparent
+}
+
+.ProfileHeader-contentHead {
+	position: relative;
+	padding-right: 106px;
+	margin-bottom: 16px
+}
+
+.ProfileHeader-contentHead .Button--plain {
+	position: absolute;
+	top: 8px;
+	right: 0
+}
+
+.ProfileHeader-contentHead .Button--plain:hover {
+	color: gray
+}
+
+.ProfileHeader-contentHead .Button--plain:hover .Icon {
+	fill: #999
+}
+
+html[data-theme=dark] .ProfileHeader-contentHead .Button--plain:hover .Icon {
+	fill: #646464
+}
+
+html[data-theme=dark] .ProfileHeader-contentHead .Button--plain:hover {
+	color: gray
+}
+
+.ProfileHeader-contentHead .FollowStatus {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 3px 6px
+}
+
+.ProfileHeader-contentBody {
+	position: relative;
+	width: 524px;
+	overflow: hidden
+}
+
+.content-enter {
+	top: 0;
+	opacity: 0
+}
+
+.content-enter-active {
+	opacity: 1;
+	transition: opacity .3s ease-out
+}
+
+.content-leave {
+	position: absolute;
+	opacity: 1
+}
+
+.content-leave-active {
+	opacity: 0;
+	transition: opacity .3s ease-out
+}
+
+.ProfileHeader-title {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.ProfileHeader-name {
+	font-size: 26px;
+	font-weight: 600;
+	font-synthesis: style;
+	line-height: 30px
+}
+
+html[data-ios] .ProfileHeader-name {
+	font-weight: 500
+}
+
+html[data-android] .ProfileHeader-name {
+	font-weight: 700
+}
+
+.ProfileHeader-badge {
+	margin-left: 12px;
+	vertical-align: 2px
+}
+
+.ProfileHeader-badge.is-unverified {
+	color: #8590a6
+}
+
+.ProfileHeader-badge.is-unverified .Icon {
+	margin-right: 4px
+}
+
+html[data-theme=dark] .ProfileHeader-badge.is-unverified {
+	color: #606a80
+}
+
+.ProfileHeader-detailValue a,.ProfileHeader-headline a {
+	border: none!important
+}
+
+.ProfileHeader-detailValue a:hover,.ProfileHeader-headline a:hover,html[data-theme=dark] .ProfileHeader-detailValue a:hover,html[data-theme=dark] .ProfileHeader-headline a:hover {
+	color: #175199
+}
+
+.ProfileHeader-headline {
+	margin-left: 12px;
+	font-size: 18px;
+	white-space: nowrap
+}
+
+.ProfileHeader-info {
+	font-size: 14px;
+	line-height: 20px;
+	box-sizing: border-box
+}
+
+.ProfileHeader--org .ProfileHeader-info {
+	margin-bottom: 36px;
+	overflow: hidden;
+	font-size: 18px;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.ProfileHeader-divider {
+	display: inline-block;
+	width: 1px;
+	height: 10px;
+	margin: 0 8px;
+	background: #ebebeb
+}
+
+html[data-theme=dark] .ProfileHeader-divider {
+	background: #444
+}
+
+.ProfileHeader-infoItem {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.ProfileHeader-infoItem:not(:last-child) {
+	margin-bottom: 10px
+}
+
+.ProfileHeader-iconWrapper {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 12px;
+	text-align: center;
+	color: #8590a6
+}
+
+html[data-theme=dark] .ProfileHeader-iconWrapper {
+	color: #606a80
+}
+
+.ProfileHeader-arrowIcon.is-active {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg)
+}
+
+.ProfileHeader-contentFooter {
+	position: relative;
+	padding-top: 8px
+}
+
+.ProfileHeader-expandButton {
+	line-height: 1
+}
+
+.ProfileHeader-expandButton .Icon {
+	margin: 0 16px 0 4px
+}
+
+.ProfileHeader-buttons {
+	position: absolute;
+	right: 0;
+	bottom: 0
+}
+
+.ProfileHeader-detail {
+	width: 100%;
+	font-size: 14px;
+	line-height: 1.8;
+	color: #1a1a1a
+}
+
+html[data-theme=dark] .ProfileHeader-detail {
+	color: #999
+}
+
+.ProfileHeader-detailItem {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-bottom: 18px
+}
+
+.ProfileHeader-detailLabel {
+	width: 60px;
+	margin-right: 37px;
+	font-weight: 600;
+	font-synthesis: style
+}
+
+html[data-ios] .ProfileHeader-detailLabel {
+	font-weight: 500
+}
+
+html[data-android] .ProfileHeader-detailLabel {
+	font-weight: 700
+}
+
+.ProfileHeader-detailValue {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	overflow: hidden
+}
+
+.ProfileHeader-field {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.ProfileHeader-field:not(:first-child) {
+	margin-top: 12px
+}
+
+.ProfileHeader-itemAvatar {
+	width: 18px;
+	height: 18px;
+	margin-right: 12px
+}
+
+.ProfileHeader-defaultCover {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover
+}
+
+.ProfileHeader-tips {
+	font-size: 14px;
+	color: #8590a6
+}
+
+html[data-theme=dark] .ProfileHeader-tips {
+	color: #606a80
+}
+
+.PageHeader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: -webkit-transform .3s;
+	transition: transform .3s;
+	transition: transform .3s,-webkit-transform .3s
+}
+
+.PageHeader:not(.is-shown) {
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%)
+}
+
+.ProfileMain-avatar .Avatar {
+	display: block;
+	cursor: pointer
+}
+
+.PageHeader .ProfileMain-header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 1000px;
+	height: 100%;
+	padding: 0 16px;
+	margin: 0 auto
+}
+
+.PageHeader .ProfileMain-tabs {
+	border-bottom: none
+}
+
+.ProfileMain-tabs {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1
+}
+
+.ProfileMain-tabs .Tabs-meta {
+	font-weight: 400
+}
+
+.ProfileMain-menuToggler {
+	font-size: 16px;
+	color: #1a1a1a
+}
+
+html[data-theme=dark] .ProfileMain-menuToggler {
+	color: #999
+}
+
+.ProfileMain-tabIcon {
+	margin-left: 4px
+}
+
+.Profile-popoverMenuItem {
+	height: 40px;
+	font-size: 16px;
+	line-height: 40px;
+	color: #1a1a1a
+}
+
+.Profile-popoverMenuItem.is-active {
+	background: #f6f6f6
+}
+
+html[data-theme=dark] .Profile-popoverMenuItem.is-active {
+	background: #2e2e2e
+}
+
+html[data-theme=dark] .Profile-popoverMenuItem {
+	color: #999
+}
+
+.Profile-popoverMenuItem .Link-meta {
+	font-size: 14px;
+	color: #8590a6
+}
+
+html[data-theme=dark] .Profile-popoverMenuItem .Link-meta {
+	color: #606a80
+}
+
+body:not(.Body--isAppleDevice) .ProfileMain-tabs .is-active {
+	font-weight: 600;
+	font-synthesis: style
+}
+
+html[data-ios] body:not(.Body--isAppleDevice) .ProfileMain-tabs .is-active {
+	font-weight: 500
+}
+
+html[data-android] body:not(.Body--isAppleDevice) .ProfileMain-tabs .is-active {
+	font-weight: 700
+}
+
+.ProfileMainPrivacy-mainContentWrapper {
+	height: 383px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center
+}
+
+.ProfileMainPrivacy-mainContent {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	margin-top: 86px;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	color: #8590a6
+}
+
+html[data-theme=dark] .ProfileMainPrivacy-mainContent {
+	color: #606a80
+}
+
+.ProfileMainPrivacy-mainContentText {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin-top: 20px
+}
+
+.ProfileMainPrivacy-mainContentLink {
+	font-size: 15px
+}
+
+.ProfileMainPrivacy-authWrapper {
+	display: inline-block
+}
+
+.ProfileMainPrivacy-pointerWrapper {
+	cursor: pointer
+}
+
+.ProfileLockStatus {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%)
+}
+
+.ProfileLockStatus-title {
+	margin: 42px 0 10px;
+	font-size: 20px;
+	font-weight: 600;
+	font-synthesis: style;
+	color: #1a1a1a
+}
+
+html[data-ios] .ProfileLockStatus-title {
+	font-weight: 500
+}
+
+html[data-android] .ProfileLockStatus-title {
+	font-weight: 700
+}
+
+html[data-theme=dark] .ProfileLockStatus-title {
+	color: #999
+}
+
+.ProfileLockStatus-subtitle {
+	margin-bottom: 23px;
+	font-size: 16px;
+	color: #8590a6
+}
+
+html[data-theme=dark] .ProfileLockStatus-subtitle {
+	color: #606a80
+}
+
+.ProfileLockStatus-avatar {
+	display: block;
+	width: 140px;
+	height: 140px;
+	margin: 0 auto;
+	border-radius: 50%
+}
+
+.ProfileLockStatus-redirect {
+	display: block;
+	margin: 0 auto;
+	text-decoration: underline
+}
+
+.ProfileLockStatus-redirect:hover,html[data-theme=dark] .ProfileLockStatus-redirect:hover {
+	color: rgba(23,81,153,.72)
+}
+
+.ProfileLockStatus-redirect:active,html[data-theme=dark] .ProfileLockStatus-redirect:active {
+	color: #175199
+}
+
+.ProfileLockStatus-avatar,.ProfileLockStatus-redirect,.ProfileLockStatus-subtitle,.ProfileLockStatus-title {
+	text-align: center
+}
+
+.OrgCreateButton {
+	border: none;
+	padding: 0
+}
+
+.OrgCreateButton-logoutModal p {
+	padding: 0 24px;
+	text-align: center
+}
+
+.Footer {
+	padding: 10px 0 10px 5px;
+	font-size: 13px;
+	line-height: 2;
+	color: #8590a6
+}
+
+html[data-theme=dark] .Footer {
+	color: #606a80
+}
+
+.Footer-dot:after {
+	margin: 0 5px;
+	content: "\B7"
+}
+
+.Footer-item {
+	display: inline-block
+}
+
+a.Footer-item:hover {
+	color: #175199;
+	cursor: pointer
+}
+
+html[data-theme=dark] a.Footer-item:hover {
+	color: #175199
+}
+
+.IconGraf {
+	margin-bottom: 12px
+}
+
+.IconGraf:last-child {
+	margin-bottom: 0
+}
+
+.IconGraf-iconWrapper {
+	display: inline-block;
+	width: 28px
+}
+
+.IconGraf-icon {
+	fill: #8590a6
+}
+
+html[data-theme=dark] .IconGraf-icon {
+	fill: #606a80
+}
+
+.SideItem {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 20px 0;
+	margin-bottom: 24px
+}
+
+.SideItem:last-child {
+	margin-bottom: 0
+}
+
+.SideItem-image {
+	padding-top: 3px
+}
+
+.SideItem--multiline .SideItem-image {
+	padding-top: 0
+}
+
+.SideItem-image img {
+	vertical-align: top
+}
+
+.SideItem-content {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	padding-left: 20px
+}
+
+.SideItem-title {
+	font-size: 15px;
+	color: #1a1a1a
+}
+
+.SideItem--multiline .SideItem-title {
+	font-size: 18px
+}
+
+html[data-theme=dark] .SideItem-title {
+	color: #999
+}
+
+.SideItem-description {
+	max-height: 52px;
+	margin-top: 2px;
+	overflow: hidden;
+	font-size: 14px;
+	color: #8590a6;
+	text-overflow: ellipsis
+}
+
+.SideItem--multiline .SideItem-description {
+	margin-top: 8px
+}
+
+html[data-theme=dark] .SideItem-description {
+	color: #606a80
+}
+
+.Publication-title:hover,html[data-theme=dark] .Publication-title:hover {
+	color: #175199
+}
+
+.Publications-content {
+	padding: 4px 20px
+}
+
+.Publication-item:not(:first-child) {
+	display: block;
+	border-top: 1px solid #f6f6f6
+}
+
+html[data-theme=dark] .Publication-item:not(:first-child) {
+	border-top: 1px solid #2e2e2e
+}
+
+.Publication-summary {
+	display: -webkit-box;
+	line-height: 24px;
+	color: #1a1a1a;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical
+}
+
+html[data-theme=dark] .Publication-summary {
+	color: #999
+}
+
+.Publication-image {
+	width: 80px;
+	border-radius: 3px;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+}
+
+html[data-theme=dark] .Publication-image {
+	box-shadow: 0 1px 3px rgba(0,0,0,.3)
+}
+
+.FollowshipCard {
+	font-size: 14px
+}
+
+.FollowshipCard .NumberBoard-itemInner {
+	padding: 12px 0
+}
+
+.FollowshipCard-counts:not(:last-child) {
+	border-bottom: 1px solid #f6f6f6
+}
+
+html[data-theme=dark] .FollowshipCard-counts:not(:last-child) {
+	border-bottom: 1px solid #2e2e2e
+}
+
+.FollowshipCard-link {
+	color: #175199
+}
+
+.FollowshipCard-link:hover,html[data-theme=dark] .FollowshipCard-link:hover {
+	border-bottom: 1px solid #175199
+}
+
+html[data-theme=dark] .FollowshipCard-link {
+	color: #175199
+}
+
+.FollowshipCard-avatars,.FollowshipCard-item:not(:first-child) {
+	margin-top: 12px
+}
+
+.FollowshipCard-icon {
+	margin-right: 8px
+}
+
+.FollowshipCard-avatar {
+	margin-left: 8px
+}
+
+.FollowshipCard-avatar:first-child {
+	margin-left: 0
+}
+
+.Profile {
+	width: auto
+}
+
+.Profile-main {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 1000px;
+	min-height: 100vh;
+	padding: 0 16px;
+	margin: 10px auto;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: start;
+	-ms-flex-align: start;
+	align-items: flex-start
+}
+
+.Profile-mainColumn {
+	width: 694px
+}
+
+.Profile-mainColumn .SubTabs-item .Select-button {
+	color: inherit
+}
+
+body:not(.Body--isAppleDevice) .Profile-mainColumn .List-headerText {
+	font-weight: 600;
+	font-synthesis: style
+}
+
+html[data-ios] body:not(.Body--isAppleDevice) .Profile-mainColumn .List-headerText {
+	font-weight: 500
+}
+
+html[data-android] body:not(.Body--isAppleDevice) .Profile-mainColumn .List-headerText {
+	font-weight: 700
+}
+
+body:not(.Body--isAppleDevice) .Profile-mainColumn .SubTabs-item:not(.is-active) {
+	font-weight: 400
+}
+
+.Profile-sideColumn {
+	width: 296px;
+	color: #646464
+}
+
+html[data-theme=dark] .Profile-sideColumn {
+	color: #999
+}
+
+.Profile-sideColumnItems {
+	padding: 12px 0
+}
+
+.Profile-sideColumnItem {
+	padding: 6px 20px
+}
+
+.Profile-sideColumnItemValue {
+	margin-top: 6px;
+	margin-left: 29px;
+	font-size: 14px;
+	color: #8590a6
+}
+
+html[data-theme=dark] .Profile-sideColumnItemValue {
+	color: #606a80
+}
+
+.Profile-sideColumnItemTitle {
+	display: block;
+	margin-bottom: 12px
+}
+
+.Profile-analyticsBar {
+	color: #8590a6;
+	cursor: pointer;
+	height: 56px;
+	line-height: 56px;
+	padding: 0 20px
+}
+
+.Profile-analyticsBar a {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex
+}
+
+html[data-theme=dark] .Profile-analyticsBar {
+	color: #606a80
+}
+
+.Profile-analyticsBarHint {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1;
+	margin-left: 10px
+}
+
+.Profile-analyticsBarSeen {
+	background: #f36;
+	border-radius: 50%;
+	height: 6px;
+	margin-left: 8px;
+	width: 6px
+}
+
+html[data-theme=dark] .Profile-analyticsBarSeen {
+	background: #d92155
+}
+
+.Profile-lightList {
+	font-size: 14px
+}
+
+.Profile-lightItem {
+	padding-left: 5px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 46px;
+	font-size: 14px;
+	border-top: 1px solid #ebebeb
+}
+
+.Profile-lightItem:hover,.Profile-lightItem:hover .Profile-lightItemValue,html[data-theme=dark] .Profile-lightItem:hover,html[data-theme=dark] .Profile-lightItem:hover .Profile-lightItemValue {
+	color: #175199
+}
+
+.Profile-lightItem:last-child {
+	border-bottom: 1px solid #ebebeb
+}
+
+html[data-theme=dark] .Profile-lightItem:last-child {
+	border-bottom: 1px solid #444
+}
+
+html[data-theme=dark] .Profile-lightItem {
+	border-top: 1px solid #444
+}
+
+.Profile-lightItemName {
+	-webkit-box-flex: 1;
+	-ms-flex-positive: 1;
+	flex-grow: 1
+}
+
+.Profile-lightItemValue {
+	font-size: 14px;
+	color: #8590a6
+}
+
+html[data-theme=dark] .Profile-lightItemValue {
+	color: #606a80
+}
+
+.Profile-footerOperations {
+	width: 100%;
+	padding: 10px 0 10px 5px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	font-size: 14px;
+	line-height: 1.8;
+	text-align: left;
+	border-bottom: 1px solid #ebebeb
+}
+
+.Profile-footerOperations,.Profile-footerOperations a {
+	color: #8590a6
+}
+
+html[data-theme=dark] .Profile-footerOperations,html[data-theme=dark] .Profile-footerOperations a {
+	color: #606a80
+}
+
+html[data-theme=dark] .Profile-footerOperations {
+	border-bottom: 1px solid #444
+}
+
+.Profile-footerDot:after {
+	margin-right: 5px;
+	margin-left: 5px;
+	content: "\B7"
+}
+
+.Profile-sideColumnItemLink {
+	cursor: pointer
+}
+
+.Profile-sideColumnItemLink:hover,html[data-theme=dark] .Profile-sideColumnItemLink:hover {
+	color: #175199
+}
+
+.Profile-createOrgAccount {
+	display: inline-block;
+	width: 100%;
+	line-height: 60px;
+	text-align: center;
+	color: #175199;
+	cursor: pointer
+}
+
+html[data-theme=dark] .Profile-createOrgAccount {
+	color: #175199
+}
+
+.Profile-createOrgAccountTip {
+	text-align: center
+}

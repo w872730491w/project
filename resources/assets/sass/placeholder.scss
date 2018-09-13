@@ -1,0 +1,55 @@
+.PlaceHolder-inner {
+	position: relative;
+	overflow: hidden;
+	background: #f6f6f6;
+	color: #fff
+}
+
+html[data-theme=dark] .PlaceHolder-inner {
+	background: #2e2e2e;
+	color: #1a1a1a
+}
+
+.PlaceHolder-mask {
+	position: relative;
+	min-width: 100%;
+	vertical-align: top;
+	box-sizing: border-box
+}
+
+.PlaceHolder-bg {
+	position: absolute;
+	width: 200%;
+	height: 100%;
+	background: linear-gradient(90deg,#f6f6f6 0,#ebebeb 20%,#f6f6f6 40%,#f6f6f6);
+	-webkit-animation: linear-double 1s linear 1ms infinite forwards;
+	animation: linear-double 1s linear 1ms infinite forwards
+}
+
+html[data-theme=dark] .PlaceHolder-bg {
+	background: linear-gradient(90deg,#2e2e2e 0,#444 20%,#2e2e2e 40%,#2e2e2e)
+}
+
+@-webkit-keyframes linear-double {
+	0% {
+		-webkit-transform: translateX(-56%);
+		transform: translateX(-56%)
+	}
+
+	to {
+		-webkit-transform: translateX(56%);
+		transform: translateX(56%)
+	}
+}
+
+@keyframes linear-double {
+	0% {
+		-webkit-transform: translateX(-56%);
+		transform: translateX(-56%)
+	}
+
+	to {
+		-webkit-transform: translateX(56%);
+		transform: translateX(56%)
+	}
+}

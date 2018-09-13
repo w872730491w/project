@@ -1,0 +1,77 @@
+.Tag {
+	position: relative;
+	display: inline-block;
+	height: 30px;
+	padding: 0 12px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #0084ff;
+	vertical-align: top;
+	border-radius: 100px;
+	background: rgba(0,132,255,.1)
+}
+
+.Tag:hover {
+	background-color: rgba(0,132,255,.15)
+}
+
+html[data-theme=dark] .Tag:hover {
+	background-color: rgba(58,118,208,.15)
+}
+
+.Tag--removable {
+	padding-right: 28px
+}
+
+html[data-theme=dark] .Tag {
+	color: #3a76d0;
+	background: rgba(58,118,208,.1)
+}
+
+.Tag-remove {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	bottom: 0;
+	margin-top: auto;
+	margin-bottom: auto;
+	cursor: pointer;
+	padding: 0;
+	background: none;
+	border: none;
+	outline: none;
+	color: inherit
+}
+
+.Tag-remove .Zi {
+	display: block
+}
+
+.TagInput .Input-wrapper {
+	display: block
+}
+
+.TagInput .Input {
+	-webkit-box-flex: 0;
+	-ms-flex: none;
+	flex: none;
+	height: 30px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	margin-left: 8px
+}
+
+.TagInput.TagInput--empty .Input {
+	width: 100%;
+	margin-left: 0
+}
+
+.TagInput .Tag {
+	margin-top: 2px;
+	margin-right: 4px;
+	margin-bottom: 2px
+}
+
+.TagInput .Popover {
+	display: block
+}

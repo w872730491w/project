@@ -1,0 +1,393 @@
+.ztext {
+	word-break: break-word;
+	line-height: 1.6
+}
+
+.ztext>:first-child, .public-DraftEditor-content>:first-child {
+	margin-top: 0
+}
+
+.ztext>:last-child, .public-DraftEditor-content>:last-child {
+	margin-bottom: 0
+}
+
+.ztext h1,.ztext h2,.ztext h3,.ztext h4,.ztext h5,.ztext h6 {
+	margin-top: 1.66667em;
+	margin-bottom: .83333em;
+	font-size: 1.2em;
+	line-height: 1.5;
+	font-weight: 600;
+	font-synthesis: style
+}
+
+html[data-ios] .ztext h1,html[data-ios] .ztext h2,html[data-ios] .ztext h3,html[data-ios] .ztext h4,html[data-ios] .ztext h5,html[data-ios] .ztext h6 {
+	font-weight: 500
+}
+
+html[data-android] .ztext h1,html[data-android] .ztext h2,html[data-android] .ztext h3,html[data-android] .ztext h4,html[data-android] .ztext h5,html[data-android] .ztext h6 {
+	font-weight: 700
+}
+
+.ztext u {
+	text-decoration: none
+}
+
+.ztext u,html[data-theme=dark] .ztext u {
+	border-bottom: 1px dashed gray
+}
+
+.ztext b {
+	font-weight: 600;
+	font-synthesis: style
+}
+
+html[data-ios] .ztext b {
+	font-weight: 500
+}
+
+html[data-android] .ztext b {
+	font-weight: 700
+}
+
+.ztext a.external,.ztext a.internal,.ztext a.ztext-link {
+	text-decoration: none;
+	cursor: pointer;
+	border-bottom: 1px solid gray
+}
+
+.ztext a.external:hover,.ztext a.internal:hover,.ztext a.ztext-link:hover {
+	color: #175199;
+	border-bottom: 1px solid #175199
+}
+
+html[data-theme=dark] .ztext a.external:hover,html[data-theme=dark] .ztext a.internal:hover,html[data-theme=dark] .ztext a.ztext-link:hover {
+	color: #175199;
+	border-bottom: 1px solid #175199
+}
+
+.ztext a.external>.ellipsis:after,.ztext a.internal>.ellipsis:after,.ztext a.ztext-link>.ellipsis:after {
+	content: "..."
+}
+
+.ztext a.external>.invisible,.ztext a.internal>.invisible,.ztext a.ztext-link>.invisible {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent
+}
+
+.ztext a.external u,.ztext a.internal u,.ztext a.ztext-link u {
+	border: none
+}
+
+html[data-theme=dark] .ztext a.external,html[data-theme=dark] .ztext a.internal,html[data-theme=dark] .ztext a.ztext-link {
+	border-bottom: 1px solid gray
+}
+
+.ztext a.member_mention {
+	color: #175199
+}
+
+.ztext a.member_mention:hover,html[data-theme=dark] .ztext a.member_mention:hover {
+	border-bottom: 1px solid #175199
+}
+
+html[data-theme=dark] .ztext a.member_mention {
+	color: #175199
+}
+
+.ztext p {
+	margin: 1em 0
+}
+
+.ztext hr {
+	margin: 4em auto;
+	width: 240px;
+	max-width: 100%;
+	border: none;
+	border-top: 1px solid #d3d3d3
+}
+
+html[data-theme=dark] .ztext hr {
+	border-top: 1px solid #2e2e2e
+}
+
+.ztext img[eeimg] {
+	max-width: 100%;
+	vertical-align: middle
+}
+
+html[data-theme=dark] .ztext img[eeimg] {
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.6 0.4" /><feFuncG type="table" tableValues="0.6 0.4" /><feFuncB type="table" tableValues="0.6 0.4" /></feComponentTransfer><feColorMatrix type="hueRotate" color-interpolation-filters="sRGB" values="180" /></filter></svg>#filter');
+	-webkit-filter: invert(.6) hue-rotate(180deg);
+	filter: invert(.6) hue-rotate(180deg)
+}
+
+.ztext img[eeimg="1"] {
+	margin: 0 3px;
+	display: inline-block
+}
+
+.ztext img[eeimg="2"] {
+	margin: 1em auto;
+	display: block
+}
+
+.ztext blockquote {
+	margin: 1em 0;
+	padding-left: 1em;
+	color: #646464;
+	border-left: 3px solid #d3d3d3
+}
+
+html[data-theme=dark] .ztext blockquote {
+	color: #999;
+	border-left: 3px solid #2e2e2e
+}
+
+.ztext ol,.ztext ul {
+	margin: 1em 0;
+	padding: 0
+}
+
+.ztext ol ol,.ztext ol ul,.ztext ul ol,.ztext ul ul {
+	margin: 0
+}
+
+.ztext ol>ol,.ztext ol>ul,.ztext ul>ol,.ztext ul>ul {
+	display: table-row
+}
+
+.ztext ol>ol:before,.ztext ol>ul:before,.ztext ul>ol:before,.ztext ul>ul:before {
+	display: table-cell;
+	content: ""
+}
+
+.ztext ul {
+	display: table
+}
+
+.ztext ul>li {
+	display: table-row;
+	list-style: none
+}
+
+.ztext ul>li:before {
+	display: table-cell;
+	content: "\2022   ";
+	white-space: pre
+}
+
+.ztext ol {
+	display: table;
+	counter-reset: ol
+}
+
+.ztext ol>li {
+	display: table-row;
+	list-style: none
+}
+
+.ztext ol>li:before {
+	display: table-cell;
+	text-align: right;
+	counter-increment: ol;
+	content: counter(ol) ". ";
+	white-space: pre
+}
+
+.ztext ol ol {
+	counter-reset: ol2
+}
+
+.ztext ol ol li:before {
+	counter-increment: ol2;
+	content: counter(ol2) ". "
+}
+
+.ztext ol ol ol {
+	counter-reset: ol3
+}
+
+.ztext ol ol ol li:before {
+	counter-increment: ol3;
+	content: counter(ol3) ". "
+}
+
+.ztext ol ol ol ol {
+	counter-reset: ol4
+}
+
+.ztext ol ol ol ol li:before {
+	counter-increment: ol4;
+	content: counter(ol4) ". "
+}
+
+.ztext figure {
+	margin: 1em 0
+}
+
+.ztext figure .content_image,.ztext figure .origin_image {
+	margin: 0 auto
+}
+
+.ztext figure figcaption {
+	margin-top: .66667em;
+	padding: 0 1em;
+	font-size: .9em;
+	line-height: 1.5;
+	text-align: center;
+	color: #999
+}
+
+html[data-theme=dark] .ztext figure figcaption {
+	color: #646464
+}
+
+.ztext figure+figure {
+	margin-top: 1.6em
+}
+
+.ztext .content_image,.ztext .origin_image {
+	display: block;
+	max-width: 100%;
+	margin: 1em auto
+}
+
+html[data-theme=dark] .ztext .content_image,html[data-theme=dark] .ztext .origin_image {
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.7" /><feFuncG type="linear" slope="0.7" /><feFuncB type="linear" slope="0.7" /></feComponentTransfer></filter></svg>#filter');
+	-webkit-filter: brightness(.7);
+	filter: brightness(.7)
+}
+
+html[data-ios] .ztext .content_image,html[data-ios] .ztext .origin_image {
+	-webkit-filter: none;
+	filter: none
+}
+
+.ztext .content_image[data-size=small],.ztext .origin_image[data-size=small] {
+	max-width: 40%
+}
+
+.ztext .content_image.zh-lightbox-thumb,.ztext .origin_image.zh-lightbox-thumb {
+	cursor: zoom-in
+}
+
+.ztext code {
+	margin: 0 2px;
+	padding: 3px 4px;
+	border-radius: 3px;
+	font-family: Menlo,Monaco,Consolas,Andale Mono,lucida console,Courier New,monospace;
+	font-size: .9em;
+	background-color: #f6f6f6
+}
+
+html[data-theme=dark] .ztext code {
+	background-color: #2e2e2e
+}
+
+.ztext pre {
+	margin: 1em 0;
+	padding: .88889em;
+	font-size: .9em;
+	word-wrap: normal;
+	white-space: pre;
+	overflow: auto;
+	background: #f6f6f6;
+	border-radius: 4px
+}
+
+.ztext pre code {
+	margin: 0;
+	padding: 0;
+	font-size: inherit;
+	border-radius: 0;
+	background-color: inherit
+}
+
+html[data-theme=dark] .ztext pre {
+	background: #2e2e2e
+}
+
+.ztext li pre {
+	white-space: pre-wrap
+}
+
+.ztext .link-box,.ztext .video-box {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin: 1em 0;
+	overflow: auto;
+	white-space: normal;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-radius: 4px;
+	box-shadow: 0 1px 3px rgba(26,26,26,.1)
+}
+
+html[data-theme=dark] .ztext .link-box,html[data-theme=dark] .ztext .video-box {
+	box-shadow: 0 1px 3px rgba(0,0,0,.3)
+}
+
+.ztext .link-box .thumbnail,.ztext .video-box .thumbnail {
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	width: 90px;
+	height: 90px;
+	-o-object-fit: cover;
+	object-fit: cover
+}
+
+.ztext .link-box .content,.ztext .video-box .content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	padding: 10px 1em;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: distribute;
+	justify-content: space-around
+}
+
+.ztext .link-box .title,.ztext .video-box .title {
+	font-size: 1.2em;
+	font-weight: 600;
+	font-synthesis: style
+}
+
+html[data-ios] .ztext .link-box .title,html[data-ios] .ztext .video-box .title {
+	font-weight: 500
+}
+
+html[data-android] .ztext .link-box .title,html[data-android] .ztext .video-box .title {
+	font-weight: 700
+}
+
+.ztext .link-box .url,.ztext .video-box .url {
+	overflow: hidden;
+	color: gray;
+	text-overflow: ellipsis;
+	word-wrap: normal;
+	white-space: nowrap
+}
+
+html[data-theme=dark] .ztext .link-box .url,html[data-theme=dark] .ztext .video-box .url {
+	color: gray
+}
+
+.ztext .link-box .label,.ztext .video-box .label {
+	display: none
+}
+
+html[data-theme=dark] .ztext .link-box,html[data-theme=dark] .ztext .video-box {
+	border: 1px solid #444
+}

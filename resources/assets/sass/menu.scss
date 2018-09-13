@@ -1,0 +1,21 @@
+.Menu {
+	padding: 6px 0
+}
+
+.Menu-item {
+	display: block;
+	width: 100%;
+	padding: 0 20px;
+	text-align: left;
+	cursor: pointer;
+	box-sizing: border-box
+}
+
+.Menu-item.is-active {
+	background: #f6f6f6
+}
+
+.Menu-divider {
+	margin: 8px 0;
+	border-bottom: 1px solid #ebebeb
+}
